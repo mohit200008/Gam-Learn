@@ -1,0 +1,18 @@
+.player-color {
+  background-color: #1874d6;
+}
+
+.player-area {
+  background: rgb(61, 61, 66);
+  background: linear-gradient(90deg, rgba(61, 61, 66, 1) 0%, rgba(0, 48, 255, 1) 84%, rgba(0, 48, 255, 1) 93%);
+  background: linear-gradient(90deg, rgba(0, 48, 255, 1) 0%, rgba(0, 48, 255, 1) 9%, rgba(63, 61, 66, 1) 93%);
+}
+
+.quest-color {
+  background-color: #d42d0c;
+}
+
+.quest-area {
+  background: rgb(66, 61, 61);
+  background: linear-gradient(90deg, rgba(66, 61, 61, 1) 0%, rgba(255, 46, 0, 1) 100%);
+}
