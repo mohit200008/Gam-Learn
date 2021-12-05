@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #header {
-  background: #171c28;
+  background: #eeeeee;
   transition: all 0.5s;
   z-index: 997;
   height: 86px;
@@ -43,6 +43,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo a {
   color: #dfd5d5;
+}
+
+#logo{
+  padding-left: 50px;
+}
+
+#logout{
+  padding-right: 50px;
 }
 
 #header .logo a span {
@@ -87,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 3px;
   font-size: 15px;
   font-weight: 600;
-  color: #beaeae;
+  color: #272222;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
