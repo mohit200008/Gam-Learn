@@ -384,6 +384,9 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  /* color added */
+  background-color:rgb(244 239 232 / 76%);
+  
 }
 
 .section-bg {
@@ -433,49 +436,110 @@ section {
 
 
 .card{
-  margin-left: 30px;;
+  margin-left: 30px;/*changed */
   padding: 0;
-  box-shadow: 0 0 100px 0 rgba(68, 88, 144, 0.12);
+  box-shadow: 10px 10px 8px 5px rgb(163, 153, 153);/*changed*/
   transition: transform 0.5s;
   border-radius: 30px;
+  margin-right:10px;/*added*/
+  
 }
 .box {
-  padding: 30px;
   position: relative;
   overflow: hidden;
   height:300px;
   cursor: pointer;
   border-radius: 30px;
+  
+}
+.box .description{
+  color:rgb(102, 6, 14);
+  font-style: italic;
 }
 
 #c1{
   background-image: url("../img/maths.jpeg");
   background-position: center;
   background-size: cover;
+  /* changing */
+  padding-left: 30px;
+  padding-top:50px;
+  
+}
+#c1 .title{
+  margin-bottom: 15px;
+}
+/* making titles */
+.title{
+  font-weight: bold;
+  font-size: 29px;
+  color:rgb(48, 3, 7);
+  animation: neared 2s infinite;/*added*/
+}
+@keyframes neared{
+  0%{
+    color:rgb(46, 4, 4)
+  }
+  50%{
+    color:rgb(11, 43, 20);
+  }
+  90%{
+    color:rgb(34, 133, 25);
+  }
+}
+.description{
+  text-align: left;
 }
 
 #c2{
   background-image: url("../img/english.jpeg");
   background-position: center;
   background-size: cover;
+  /* changing */
+  padding-left: 30px;
+  padding-top:50px;
+}
+#c2 .title{
+  margin-bottom:25px;
 }
 
 #c3{
   background-image: url("../img/history.jpeg");
   background-position: center;
   background-size: cover;
+  /* changing */
+  padding-left: 30px;
+  padding-top:50px;
+}
+#c3.title{
+  margin-bottom: 25px;
 }
 
 #c4{
   background-image: url("../img/physics.jpeg");
   background-position: center;
   background-size: cover;
+  /* changing */
+  padding-left: 30px;
+  padding-top:50px;
 }
 
 #c5{
   background-image: url("../img/chemistry.jpeg");
   background-position: center;
   background-size: cover;
+  /* changing */
+  padding-left: 20px;
+  padding-top:50px;
+}
+/* changing margin */
+#c5 .title{
+  margin-bottom:18px;
+}
+.box:hover{
+  width:230px;
+  height:295px;
+  transition: all 1.2s ease;
 }
 
 .card:hover{
