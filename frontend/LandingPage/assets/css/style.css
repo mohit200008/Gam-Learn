@@ -400,165 +400,75 @@ section {
 .section-bg {
   background-color: #171c28;
 }
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
+.subjectss .container{
+  display:flex; 
+    position:relative; 
+    align-items: center;
+    justify-content: center;
+    width:100%; 
+    flex-wrap: wrap;
+    padding:30px; 
+    overflow:hidden;
+    background-color:rgb(244 239 232 / 76%);
 }
-
-.section-title h2 {
-  font-size: 13px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  padding: 8px 20px;
-  margin: 0;
-  background: #e7f1fd;
-  color: #106eea;
-  display: inline-block;
-  text-transform: uppercase;
-  border-radius: 50px;
+.subjectss .container a{
+  display:inline-block;
 }
-
-.section-title h3 {
-  margin: 15px 0 0 0;
-  font-size: 32px;
-  font-weight: 700;
+.subjectss .container a .subcard{
+  position:relative; 
+   max-width: 270px;
+   height:150px;
+   background: rgb(74, 232, 238);
+   border-radius: 10px;
+   border:2px solid white;
+   margin:30px 30px; 
+   display:flex; 
+   flex-direction: column;
+   box-shadow: 0 2px 22px rgba(112, 202, 224, 0.911);
+   transition:0.3s ease-in-out;
 }
-
-.section-title h3 span {
-  color: #106eea;
+.subjectss .container .subcard:hover{
+  height:300px; 
 }
-
-.section-title p {
-  margin: 15px auto 0 auto;
-  font-weight: 600;
-}
-
-@media (min-width: 1024px) {
-  .section-title p {
-    width: 50%;
-  }
-}
-
-
-
-
-.card{
-  margin-left: 30px;/*changed */
-  padding: 0;
-  box-shadow: 10px 10px 8px 5px rgb(163, 153, 153);/*changed*/
-  transition: transform 0.5s;
-  border-radius: 30px;
-  margin-right:10px;/*added*/
-  
-}
-.box {
+.subjectss .container .subcard .imagebox{
   position: relative;
-  overflow: hidden;
-  height:300px;
-  cursor: pointer;
-  border-radius: 30px;
-  
+  height:300px; 
+ width:270px; 
+ margin:auto; 
+ top:-45px; 
+ padding:0 30px; 
 }
-.box .description{
-  color:rgb(102, 6, 14);
-  font-style: italic;
+.subjectss .container .subcard .imagebox.special{
+  position: relative;
+  height:300px; 
+ width:270px; 
+ margin:auto; 
+ top:-21px; 
+ padding:0 30px; 
 }
-
-#c1{
-  background-image: url("../img/maths.jpeg");
-  background-position: center;
-  background-size: cover;
-  /* changing */
-  padding-left: 30px;
-  padding-top:50px;
-  
+.subjectss .container .subcard .imagebox img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
-#c1 .title{
-  margin-bottom: 15px;
-}
-/* making titles */
-.title{
+.subjectss .container .subcard .content{
+  position: relative;
+  margin-top: -40px;
+  padding:20px 15px; 
+  text-align: center;
+  color:white;
   font-weight: bold;
-  font-size: 29px;
-  color:rgb(48, 3, 7);
-  animation: neared 2s infinite;/*added*/
-}
-@keyframes neared{
-  0%{
-    color:rgb(46, 4, 4)
-  }
-  50%{
-    color:rgb(11, 43, 20);
-  }
-  90%{
-    color:rgb(34, 133, 25);
-  }
-}
-.description{
-  text-align: left;
+  visibility: hidden;
+  opacity:0; 
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s ease-in-out;
 }
 
-#c2{
-  background-image: url("../img/english.jpeg");
-  background-position: center;
-  background-size: cover;
-  /* changing */
-  padding-left: 30px;
-  padding-top:50px;
-}
-#c2 .title{
-  margin-bottom:25px;
-}
-
-#c3{
-  background-image: url("../img/history.jpeg");
-  background-position: center;
-  background-size: cover;
-  /* changing */
-  padding-left: 30px;
-  padding-top:50px;
-}
-#c3.title{
-  margin-bottom: 25px;
-}
-
-#c4{
-  background-image: url("../img/physics.jpeg");
-  background-position: center;
-  background-size: cover;
-  /* changing */
-  padding-left: 30px;
-  padding-top:50px;
-}
-
-#c5{
-  background-image: url("../img/chemistry.jpeg");
-  background-position: center;
-  background-size: cover;
-  /* changing */
-  padding-left: 20px;
-  padding-top:50px;
-}
-/* changing margin */
-#c5 .title{
-  margin-bottom:18px;
-}
-.box:hover{
-  width:217.99px;
-  height:295px;
-  transition: all 1.2s ease;
-}
-
-.card:hover{
-          transform: translateY(-20px);
-}
-
-@media (max-width: 961px) and (min-width: 768px) {
-  .card {
-    width: 45%;
-        float: left;
-  }
+.subjectss .container .subcard:hover .content{
+   visibility: visible;
+  opacity:1; 
+   transition-delay: 0.3s;
 }
 
 
