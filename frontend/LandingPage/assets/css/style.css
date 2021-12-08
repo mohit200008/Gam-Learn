@@ -389,17 +389,15 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-section {
-  padding: 60px 0;
-  overflow: hidden;
-  /* color added */
-  background-color:rgb(244 239 232 / 76%);
-  
-}
+
 
 .section-bg {
   background-color: #171c28;
 }
+
+
+
+
 .subjectss .container{
   display:flex; 
     position:relative; 
@@ -463,13 +461,18 @@ section {
   opacity:0; 
   font-family: 'Poppins', sans-serif;
   transition: 0.3s ease-in-out;
+
 }
+
 
 .subjectss .container .subcard:hover .content{
    visibility: visible;
   opacity:1; 
    transition-delay: 0.3s;
 }
+
+
+
 
 
 

@@ -389,16 +389,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
+
 
 .section-bg {
   background-color: #171c28;
 }
 
-.container-card{
+ .container-card{
   display:flex; 
     position:relative; 
     align-items: center;
@@ -435,6 +432,7 @@ section {
  margin:auto; 
  top:-45px; 
  padding:0 30px; 
+
 }
 .container-card .subcard .imagebox.special{
   position: relative;
@@ -443,6 +441,7 @@ section {
  margin:auto; 
  top:-21px; 
  padding:0 30px; 
+
 }
 .container-card .subcard .imagebox img{
   max-width: 100%;
@@ -461,13 +460,17 @@ section {
   opacity:0; 
   font-family: 'Poppins', sans-serif;
   transition: 0.3s ease-in-out;
+
 }
+
 
  .container-card .subcard:hover .content{
    visibility: visible;
   opacity:1; 
    transition-delay: 0.3s;
 }
+
+
 
 
 
