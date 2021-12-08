@@ -395,7 +395,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #171c28;
 }
 
-.subjectss .container{
+ .container-card{
   display:flex; 
     position:relative; 
     align-items: center;
@@ -406,26 +406,26 @@ h1, h2, h3, h4, h5, h6 {
     overflow:hidden;
     background-color:rgb(244 239 232 / 76%);
 }
-.subjectss .container a{
+ .container-card a{
   display:inline-block;
 }
-.subjectss .container a .subcard{
+ .container-card a .subcard{
   position:relative; 
    max-width: 270px;
    height:150px;
    background: rgb(74, 232, 238);
    border-radius: 10px;
    border:2px solid white;
-   margin:30px 30px; 
+   margin:30px 50px; 
    display:flex; 
    flex-direction: column;
    box-shadow: 0 2px 22px rgba(112, 202, 224, 0.911);
    transition:0.3s ease-in-out;
 }
-.subjectss .container .subcard:hover{
+ .container-card .subcard:hover{
   height:300px; 
 }
-.subjectss .container .subcard .imagebox{
+ .container-card .subcard .imagebox{
   position: relative;
   height:300px; 
  width:270px; 
@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
  padding:0 30px; 
 
 }
-.subjectss .container .subcard .imagebox.special{
+.container-card .subcard .imagebox.special{
   position: relative;
   height:300px; 
  width:270px; 
@@ -443,13 +443,13 @@ h1, h2, h3, h4, h5, h6 {
  padding:0 30px; 
 
 }
-.subjectss .container .subcard .imagebox img{
+.container-card .subcard .imagebox img{
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
-.subjectss .container .subcard .content{
+ .container-card .subcard .content{
   position: relative;
   margin-top: -40px;
   padding:20px 15px; 
@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.subjectss .container .subcard:hover .content{
+ .container-card .subcard:hover .content{
    visibility: visible;
   opacity:1; 
    transition-delay: 0.3s;
