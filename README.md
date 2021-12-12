@@ -38,11 +38,13 @@ Log In
 Sign Up
 ![SignUp](https://user-images.githubusercontent.com/64153988/120083846-4441ad80-c0e9-11eb-8917-83fc6bf48107.png)
 Home Page
-![home](https://user-images.githubusercontent.com/64153988/120083847-44da4400-c0e9-11eb-8ee3-58e95bd917ea.png)
+![Home](https://user-images.githubusercontent.com/79957651/145426563-c62dc53a-1b27-4c1b-9ec1-8cc1b1e2e64b.png)
+![cards](https://user-images.githubusercontent.com/79957651/145426477-4f15d218-e881-4556-83d3-ec77ebdebdaf.png)
 Quiz Section
 ![Quiz](https://user-images.githubusercontent.com/64153988/120083845-43a91700-c0e9-11eb-859c-ddc0ae9c20ce.png)
-Mulit Language
-![HomeHi](https://user-images.githubusercontent.com/64153988/120083843-3db33600-c0e9-11eb-9fcd-64aa2b1170d8.png)
+Multi Language
+![Home](https://user-images.githubusercontent.com/79957651/145426782-d37c6501-130a-4851-afcb-7d86983d1dcb.png)
+![cards](https://user-images.githubusercontent.com/79957651/145426719-1c0bced6-4aaa-4bbd-b90f-9beb93c40433.png)
 
 
 #cicada3301reinvented and #mstc_daiict and #ieee_mtts_daiict
