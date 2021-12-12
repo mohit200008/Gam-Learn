@@ -1,0 +1,49 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vw; 
+    min-height: 100vh;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 245, 231);
+}
+
+form{
+    padding:20px 20px ;
+    background-color: rgb(166, 238, 159);
+     border:2px solid black; 
+}
+form .Subject{
+    margin:10px 0; 
+}
+
+form .Question div{
+   margin:10px 0; 
+}
+
+form button{
+    padding:4px 4px;  
+    background-color: rgb(0, 162, 255);
+   color:white; 
+   border-radius: 5px;
+    cursor: pointer;
+    margin:0 5em;  
+}
+form  .add{
+
+    padding: 5px 8px;
+    text-align: center;
+    font-size: 16px;
+   margin-right: 3px;
+   border-radius: 50%;
+   right:0; 
+}
+
+
+
+
