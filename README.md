@@ -1,7 +1,6 @@
 # Gam-Learn
 
-## Demo
-Checkout the demo video from [here](https://youtu.be/kVV4fNTQHBw)
+
 
 
 ## For logging in
