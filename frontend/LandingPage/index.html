@@ -12,6 +12,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
  
   <link href="assets/css/style.css" rel="stylesheet">
+ <script src="home-script.js" defer></script>
 </head>
 
 <body>
@@ -73,13 +74,33 @@
 
   
   <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Gam-learn</h1>
+    <section id="home-hero" aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <!-- <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button> -->
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <div class="slide-text">
+          <h1>Gam-learn</h1>
       <h2>Always aiming to make learning fun</h2>
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
       </div>
-    </div>
+        </div>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="assets/img/home-carousel/home-carousel-1.jpg" alt="Home Image #1">
+          </li>
+          <li class="slide">
+            <img src="assets/img/home-carousel/home-carousel-2.jpg" alt="Home Image #2">
+          </li>
+          <li class="slide">
+            <img src="assets/img/home-carousel/home-carousel-3.jpg" alt="Home Image #3">
+          </li>
+          <li class="slide">
+            <img src="assets/img/home-carousel/home-carousel-4.jpg" alt="Home Image #4">
+          </li>
+        </ul>
+      </div>
+    </section>
   </section>>
 
 
@@ -90,6 +111,7 @@
 
         <span class="fs-2">Know About Gam-Learn</span>
       </a>
+      
     </section>
 
     <div class="p-5 mb-4 bg-light rounded-3" data-aos="fade-up">
