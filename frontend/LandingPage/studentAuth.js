@@ -19,8 +19,7 @@ auth.onAuthStateChanged((user) => {
         logout.innerText = 'Logout';
         loggedUser.innerText = user.email;
     } else {
-        logout.innerText = 'Login';
-        toggleOnAuth.style.display = 'none';
+        window.location.replace("/frontend/index.html");
     }
 });
 
