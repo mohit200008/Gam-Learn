@@ -26,7 +26,8 @@ form{
      box-shadow:3px 3px rgb(30 34 28);
 }
 form .Subject{
-    margin:10px 0; 
+    margin:10px 0;
+    font-weight: bold; 
 }
 
 form .Question div{
