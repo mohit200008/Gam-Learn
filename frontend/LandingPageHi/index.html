@@ -12,6 +12,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="homeHi-script.js" defer></script>
+
 </head>
 
 <body>
@@ -78,14 +80,41 @@
   </nav>
 
   <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <!-- <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <h1>Gam-learn</h1>
       <h2>हमेशा सीखने को मजेदार बनाने का लक्ष्य</h2>
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">शुरू हो जाओ</a>
       </div>
-    </div>
-  </section>
+    </div> -->
+    <section id="home-hero" aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <!-- <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button> -->
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <div class="slide-text">
+          <h1>Gam-learn</h1>
+          <h2>हमेशा सीखने को मजेदार बनाने का लक्ष्य</h2>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started scrollto">शुरू हो जाओ</a>
+          </div>
+        </div>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="assets/img/home-carousel/home-carousel-1.jpg" alt="Home ImageHi #1">
+          </li>
+          <li class="slide">
+            <img src="assets/img/home-carousel/home-carousel-2.jpg" alt="Home ImageHi #2">
+          </li>
+          <li class="slide">
+            <img src="assets/img/home-carousel/home-carousel-3.jpg" alt="Home ImageHi #3">
+          </li>
+          <li class="slide">
+            <img src="assets/img/home-carousel/home-carousel-4.jpg" alt="Home ImageHi #4">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>>
 
 
   <div id="about" class="" data-aos="fade-up">
