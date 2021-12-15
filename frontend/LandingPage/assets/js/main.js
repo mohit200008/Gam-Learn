@@ -190,3 +190,75 @@
   });
 
 })()
+
+function rs(rsid) {
+
+  var node = document.createElement("span");   
+  var textnode = document.createTextNode("0%"); 
+  node.appendChild(textnode); 
+  
+
+  if(rsid==="rs-phys"){var rsid2 = document.getElementById("phys");
+    rsid2.classList="";
+    rsid2.classList.add("progress-circle","p0");
+    rsid2.innerHTML="";
+    rsid2.appendChild(node);
+  }
+  if(rsid==="rs-chem"){var rsid2 = document.getElementById("chem");
+    rsid2.classList="";
+    rsid2.classList.add("progress-circle","p0");
+        rsid2.innerHTML="";
+    rsid2.appendChild(node);
+  }
+  if(rsid==="rs-math"){var rsid2 = document.getElementById("math");
+    rsid2.classList="";
+    rsid2.classList.add("progress-circle","p0");
+        rsid2.innerHTML="";
+    rsid2.appendChild(node);
+  }
+  if(rsid==="rs-eng"){var rsid2 = document.getElementById("eng");
+    rsid2.classList="";
+    rsid2.classList.add("progress-circle","p0");
+        rsid2.innerHTML="";
+    rsid2.appendChild(node);
+  }
+  if(rsid==="rs-hist"){var rsid2 = document.getElementById("hist");
+    rsid2.classList="";
+    rsid2.classList.add("progress-circle","p0");
+    rsid2.innerHTML="";
+    rsid2.appendChild(node);
+  }
+
+
+  if(rsid==="rs-all"){
+    document.getElementById("sindex").style="0%";
+    document.getElementById("sindex").classList="";
+    document.getElementById("sindex").classList.add("progress-bar", "bg-danger", "progress-bar-striped", "progress-bar-animated");
+    document.getElementById("leandex").style="0%"
+        document.getElementById("leandex").classList="";
+    document.getElementById("leandex").classList.add("progress-bar", "bg-danger", "progress-bar-striped", "progress-bar-animated");
+    document.getElementById("achdex").style="0%"
+        document.getElementById("achdex").classList="";
+    document.getElementById("achdex").classList.add("progress-bar", "bg-danger", "progress-bar-striped", "progress-bar-animated");
+    document.getElementById("opdex").style="0%"
+        document.getElementById("opdex").classList="";
+    document.getElementById("opdex").classList.add("progress-bar", "bg-danger", "progress-bar-striped", "progress-bar-animated");
+
+
+    document.getElementById("card-sindex").classList="";
+    document.getElementById("card-sindex").classList.add("card", "h-100", "bg-light", "border-danger");
+    document.getElementById("card-leandex").classList="";
+    document.getElementById("card-leandex").classList.add("card", "h-100", "bg-light", "border-danger");
+    document.getElementById("card-achdex").classList="";
+    document.getElementById("card-achdex").classList.add("card", "h-100", "bg-light", "border-danger");
+    document.getElementById("card-opdex").classList="";
+    document.getElementById("card-opdex").classList.add("card", "bg-light", "border-danger");
+
+    let arr=["rs-phys","rs-chem","rs-math","rs-eng","rs-hist"];
+    
+    for (let i = 0; i < arr.length; i++) {
+      rs(arr[i]);
+    }
+  }
+
+}
