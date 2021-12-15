@@ -1,5 +1,8 @@
+const auth = firebase.auth();
+
 var playerLife = 10;
 var questLife = 10;
+var correctAnswers = 0;
 
 var questWinnerMessage = "Game over: Now you know the power of the dark side!";
 var playerWinnerMessage = "You defeated the dark side!";
@@ -16,10 +19,10 @@ document.querySelector(".game-board").classList.add("before-game");
 
 var allCardElements = document.querySelectorAll(".card");
 
-for(var i = 0; i < allCardElements.length; i++) {
+for (var i = 0; i < allCardElements.length; i++) {
   var card = allCardElements[i];
-  if(card.classList.contains("player-card")) {
-    card.addEventListener("click",function(e){
+  if (card.classList.contains("player-card")) {
+    card.addEventListener("click", function (e) {
       cardClicked(this);
     });
   }
@@ -28,28 +31,28 @@ for(var i = 0; i < allCardElements.length; i++) {
 
 function cardClicked(cardEl) {
 
-  if(cardSelected) { return; }
+  if (cardSelected) { return; }
   cardSelected = true;
 
   cardEl.classList.add("played-card");
 
   document.querySelector(".game-board").classList.add("card-selected");
 
-  setTimeout(function(){
+  setTimeout(function () {
     revealquestPower();
-  },500)
+  }, 500)
 
-  setTimeout(function(){
+  setTimeout(function () {
     revealPlayerPower();
-  },700)
+  }, 700)
 
-  setTimeout(function(){
+  setTimeout(function () {
     compareCards();
   }, 700);
 }
 
 
-function compareCards(){
+function compareCards() {
   var playerCard = document.querySelector(".played-card");
   var playerPowerEl = playerCard.querySelector(".power");
 
@@ -67,6 +70,7 @@ function compareCards(){
     playerCard.classList.add("worse-card");
     document.querySelector(".player-stats .thumbnail").classList.add("ouch");
   } else if (powerDifference > 0) {
+    correctAnswers++;
     questLife = questLife - powerDifference;
     playerCard.classList.add("better-card");
     questCard.classList.add("worse-card");
@@ -78,9 +82,9 @@ function compareCards(){
 
   updateScores();
 
-  if(playerLife <= 0) {
+  if (playerLife <= 0) {
     gameOver("Dark side");
-  } else if (questLife <= 0){
+  } else if (questLife <= 0) {
     gameOver("Player")
   }
 
@@ -90,13 +94,29 @@ function compareCards(){
 }
 
 function gameOver(winner) {
+  localStorage.setItem("history-score", correctAnswers);
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      db.collection("scores").add({
+        email: user.email,
+        subject: "history",
+        score: correctAnswers,
+        data: new Date()
+      }).then(() => {
+        window.location.href = "/frontend/LandingPage/score.html";
+      })
+    } else {
+      console.log("No user");
+    }
+  });
+
   audioObj.pause();
   document.querySelector(".game-board").classList.add("game-over");
   document.querySelector(".winner-section").style.display = "flex";
   document.querySelector(".winner-section").classList.remove("player-color");
   document.querySelector(".winner-section").classList.remove("quest-color");
 
-  if(winner == "Dark side") {
+  if (winner == "Dark side") {
     let evilAudio = new Audio("evil-laugh.mp3");
     evilAudio.play();
     document.querySelector(".winner-message").innerHTML = questWinnerMessage;
@@ -117,7 +137,7 @@ function startGame() {
 }
 
 
-function restartGame(){
+function restartGame() {
   document.querySelector(".game-board").classList.remove("game-over");
   document.querySelector(".game-board").classList.remove("during-game");
   document.querySelector(".game-board").classList.add("before-game");
@@ -129,7 +149,7 @@ function restartGame(){
 
   document.querySelector("button").removeAttribute("disabled");
 
-  for(var i = 0; i < cards.length; i++) {
+  for (var i = 0; i < cards.length; i++) {
     cards[i].style.display = "none";
   }
 
@@ -142,7 +162,7 @@ function restartGame(){
   updateScores();
 }
 
-function updateScores(){
+function updateScores() {
 
   document.querySelector(".player-stats .life-total").innerHTML = playerLife;
   document.querySelector(".quest-stats .life-total").innerHTML = questLife;
@@ -151,13 +171,13 @@ function updateScores(){
   if (playerPercent < 0) {
     playerPercent = 0;
   }
-  document.querySelector(".player-stats .life-left").style.height =  playerPercent + "%";
+  document.querySelector(".player-stats .life-left").style.height = playerPercent + "%";
 
   var questPercent = questLife / questStartLife * 100
   if (questPercent < 0) {
     questPercent = 0;
   }
-  document.querySelector(".quest-stats .life-left").style.height =  questPercent + "%";
+  document.querySelector(".quest-stats .life-left").style.height = questPercent + "%";
 }
 
 
@@ -183,17 +203,17 @@ function playTurn() {
   document.querySelector(".player-stats .thumbnail").classList.remove("ouch");
   document.querySelector(".next-turn").setAttribute("disabled", "true");
 
-  for(var i = 0; i < allCardElements.length; i++) {
+  for (var i = 0; i < allCardElements.length; i++) {
     var card = allCardElements[i];
     card.classList.remove("showCard");
   }
 
-  setTimeout(function(){
+  setTimeout(function () {
     revealCards();
   }, 500);
 }
 
-function revealCards(){
+function revealCards() {
 
 
   var j = 0;
@@ -213,7 +233,7 @@ function revealCards(){
 
   var playerCards = scenario.playerCards;
 
-  for(var i = 0; i < allCardElements.length; i++) {
+  for (var i = 0; i < allCardElements.length; i++) {
     var card = allCardElements[i];
 
     card.classList.remove("worse-card");
@@ -223,18 +243,18 @@ function revealCards(){
     card.classList.remove("prepared");
     card.classList.remove("reveal-power");
 
-    if(card.classList.contains("player-card")) {
+    if (card.classList.contains("player-card")) {
       card.querySelector(".text").innerHTML = playerCards[cardIndexes[j]].description;
       card.querySelector(".power").innerHTML = playerCards[cardIndexes[j]].power;
       j++;
     }
-    setTimeout(function(card, j){
-      return function() {
+    setTimeout(function (card, j) {
+      return function () {
         card.classList.remove("prepared");
         card.style.display = "block";
         card.classList.add("showCard");
       }
-    }(card,i), parseInt(i+1) * 200);
+    }(card, i), parseInt(i + 1) * 200);
   }
 
   questCardEl.querySelector(".text").innerHTML = questCard.description;

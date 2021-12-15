@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gam-Learn</title>
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<style>
+    /* temporary styling */
+
+    .score-heading {
+        margin-bottom: 30px;
+    }
+
+    .score-container {
+        padding: 20px;
+    }
+
+    .scores {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .subject-scores {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+</style>
+
+<body>
+    <div class="score-container">
+        <h1 class="score-heading">Last Quiz Scores</h1>
+        <div class="scores">
+            <div class="subject-scores">
+                <div class="subject">Chemistry :</div>
+                <div class="score"></div>
+            </div>
+            <div class="subject-scores">
+                <div class="subject">English :</div>
+                <div class="score"></div>
+            </div>
+            <div class="subject-scores">
+                <div class="subject">History :</div>
+                <div class="score"></div>
+            </div>
+            <div class="subject-scores">
+                <div class="subject">Maths :</div>
+                <div class="score"></div>
+            </div>
+            <div class="subject-scores">
+                <div class="subject">Physics :</div>
+                <div class="score"></div>
+            </div>
+        </div>
+    </div>
+    <script src="score.js"></script>
+</body>
+
+</html>
