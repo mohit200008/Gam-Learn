@@ -81,7 +81,7 @@ function toaster() {
           <img src="assets/img/physics.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Physics</h5>
-            <div class="progress-circle over50 p77">
+            <div id="phys" class="progress-circle over50 p77">
               <span>77%</span>
               <div class="left-half-clipper">
                 <div class="first50-bar"></div>
@@ -90,6 +90,7 @@ function toaster() {
             </div>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sequi ea ipsa incidunt a
               cumque voluptates sunt. At, facilis? Cupiditate.</p>
+              <button id="rs-phys" type="button" class="btn btn-outline-danger" onclick="rs('rs-phys');">Reset Progress</button>
           </div>
         </div>
       </div>
@@ -100,7 +101,7 @@ function toaster() {
           <img src="assets/img/chemistry.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Chemistry</h5>
-            <div class="progress-circle p35">
+            <div id="chem" class="progress-circle p35">
               <span>35%</span>
               <div class="left-half-clipper">
                 <div class="first50-bar"></div>
@@ -108,6 +109,7 @@ function toaster() {
               </div>
             </div>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consequuntur.</p>
+            <button id="rs-chem" type="button" class="btn btn-outline-danger" onclick="rs('rs-chem');">Reset Progress</button>
           </div>
         </div>
       </div>
@@ -118,7 +120,7 @@ function toaster() {
           <img src="assets/img/maths.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Mathematics</h5>
-            <div class="progress-circle over50 p57">
+            <div id="math" class="progress-circle over50 p57">
               <span>57%</span>
               <div class="left-half-clipper">
                 <div class="first50-bar"></div>
@@ -128,6 +130,7 @@ function toaster() {
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, non, sed, nesciunt harum
               nobis consequatur deleniti alias beatae necessitatibus neque minima consequuntur inventore eius doloremque
               incidunt numquam earum est. Corrupti..</p>
+              <button id="rs-math" type="button" class="btn btn-outline-danger" onclick="rs('rs-math');">Reset Progress</button>
           </div>
         </div>
       </div>
@@ -138,7 +141,7 @@ function toaster() {
           <img src="assets/img/english.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">English</h5>
-            <div class="progress-circle over50 p90">
+            <div id="eng" class="progress-circle over50 p90">
               <span>90%</span>
               <div class="left-half-clipper">
                 <div class="first50-bar"></div>
@@ -148,6 +151,7 @@ function toaster() {
             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, expedita, porro saepe
               accusantium sint illum molestiae vero deleniti nam minima iste at incidunt, dolor veniam perspiciatis
               natus. Quasi, quod veniam.</p>
+              <button id="rs-eng" type="button" class="btn btn-outline-danger" onclick="rs('rs-eng');">Reset Progress</button>
           </div>
         </div>
       </div>
@@ -158,7 +162,7 @@ function toaster() {
           <img src="assets/img/history.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">History</h5>
-            <div class="progress-circle p37">
+            <div id="hist" class="progress-circle p37">
               <span>37%</span>
               <div class="left-half-clipper">
                 <div class="first50-bar"></div>
@@ -167,6 +171,7 @@ function toaster() {
             </div>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore iste pariatur,
               ab nam animi maxime debitis explicabo tenetur consequuntur.</p>
+              <button id="rs-hist" type="button" class="btn btn-outline-danger" onclick="rs('rs-hist');">Reset Progress</button>
           </div>
         </div>
       </div>
@@ -203,12 +208,12 @@ function toaster() {
       <div class="container py-4">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100 bg-light border-warning">
+            <div id="card-sindex" class="card h-100 bg-light border-warning">
               <img src="assets/img/img-13.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Sincerity Index</h5>
                 <div class="progress">
-                  <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
+                  <div id="sindex" class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
                     style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
 
@@ -220,12 +225,12 @@ function toaster() {
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 bg-light border-success">
+            <div id="card-leandex" class="card h-100 bg-light border-success">
               <img src="assets/img/img-12.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Learning Index</h5>
                 <div class="progress">
-                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+                  <div id="leandex" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
                     style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p class="card-text">The Index of Learning Styles is an on-line survey instrument used to assess
@@ -236,12 +241,12 @@ function toaster() {
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 bg-light border-danger">
+            <div id="card-achdex" class="card h-100 bg-light border-danger">
               <img src="assets/img/img-11.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Achievement Index</h5>
                 <div class="progress">
-                  <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
+                  <div id="achdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
                     style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p class="card-text">The Achievement Index is based on your performance in each subjects.</p>
@@ -259,11 +264,11 @@ function toaster() {
             </div> -->
         </div>
         <br>
-        <div class="card bg-light border-danger">
+        <div id="card-opdex" class="card bg-light border-danger">
           <div class="card-body">
             <h5>Your Overall Performance</h5>
             <div class="progress">
-              <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
+              <div id="opdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
                 style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div id="gpa-text">
@@ -273,6 +278,7 @@ function toaster() {
         </div>
 
       </div>
+      <div><button id="rs-all" type="button" class="btn btn-outline-danger" onclick="rs('rs-all');">Reset All Progress Records</button></div>
 
 
 
