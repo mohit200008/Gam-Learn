@@ -192,6 +192,31 @@
 })()
 
 
+$('#foo-p').on('click', function(e) {
+  if( $(e.target).is('#rs-phys')  ) {
+      e.preventDefault();
+  }
+});
+$('#foo-c').on('click', function(e) {
+  if( $(e.target).is('#rs-chem')  ) {
+      e.preventDefault();
+  }
+});
+$('#foo-m').on('click', function(e) {
+  if( $(e.target).is('#rs-math')  ) {
+      e.preventDefault();
+  }
+});
+$('#foo-e').on('click', function(e) {
+  if( $(e.target).is('#rs-eng')  ) {
+      e.preventDefault();
+  }
+});
+$('#foo-h').on('click', function(e) {
+  if( $(e.target).is('#rs-hist')  ) {
+      e.preventDefault();
+  }
+});
 function rs(rsid) {
 
   var node = document.createElement("span");   
