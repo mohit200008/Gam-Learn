@@ -12,6 +12,8 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
  
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/chat.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <script src="home-script.js" defer></script>
 </head>
 
@@ -40,7 +42,7 @@
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
           <div class="col-md-3 text-end" id="logout">
-            <button type="button" class="btn btn-outline-primary me-2">Logout</button>
+            <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../index.html'">Logout</button>
             
           </div>
   
@@ -103,6 +105,49 @@
     </section>
   </section>>
 
+  <!-- CHAT BAR BLOCK created by aritroCoder -->
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content-chat">
+        <div class="full-chat-block">
+            <!-- Message Container -->
+            <div class="outer-container">
+                <div class="chat-container">
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
 
 <div id="about" class="" data-aos="fade-up">
   <div class="container py-4">
@@ -366,6 +411,9 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
   <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="chat.js" ></script>
+  <script src="responses.js" ></script>
 
 </body>
 
