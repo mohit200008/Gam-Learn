@@ -1,0 +1,124 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+
+*,*::before,*::after{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(255, 254, 254);
+    min-height: 100vh;
+    min-width: 100vw;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(form.jpg);
+    background-size:cover; 
+    background-position: center; 
+    overflow-x:hidden; 
+    
+}
+
+
+.form-container{
+   
+    width:50vw; 
+    height:80vh; 
+
+    --theme-color:rgb(102,189,91);
+
+   
+}
+
+.header{
+    height:13vh;
+    min-height:20px;
+    width:100%;
+    padding:5%; 
+    background-color: var(--theme-color);
+    color:white; 
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.input-form{
+    background-color:white; 
+    width:100%; 
+    padding:5%;
+    border:1px solid var(--theme-color);
+
+}
+
+.question{
+    width:100%;
+    margin:10px 0;
+    height:40px;
+    padding:0 10px;
+    outline:none;  
+    border:2px solid var(--theme-color);
+}
+
+.option1,.option2,.option3{
+    width:75%;
+    margin:4px;
+    border:1px solid black; 
+   height:25px;
+   padding:0 10px;
+   outline:none;  
+
+}
+.btn{
+    font-family: sans-serif;
+    margin:20px;   
+    background-color: var(--background-color);
+    color: #222;
+    font-weight: bolder;
+    font-size:.7em; 
+    padding: 1em 3em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+   letter-spacing: 1px;
+    --background-color: #ffffff;
+    --border-size: 2px;
+}
+
+
+.btn.btn-background-cover::before{
+    content:''; 
+    position: absolute; 
+    top:0; 
+    right:0;
+    left:0;
+    bottom:0;
+    background-color:white;
+    z-index:-1; 
+    border-radius:50%; 
+    transition:transform 400ms ease-in-out; 
+    transform:scale(1.5);
+    border:5px solid var(--theme-color);
+}
+
+.btn.btn-background-cover{
+    z-index:1; 
+    background-color:var(--theme-color); 
+    overflow:hidden; 
+    transition:color 300ms ease-in-out; 
+}
+.btn.btn-background-cover:hover,.btn.btn-background-cover:focus{
+    color:white; 
+}
+.btn.btn-background-cover:hover::before,.btn.btn-background-cover:focus::before{
+    transform:scale(0);
+}
+
+.Questions{
+    margin:20px 0; 
+    padding:20px;
+    border:1px solid var(--theme-color);
+}
+
+
