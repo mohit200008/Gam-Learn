@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+   <script src="form.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+       <div class="header">
+          Present your question in  easy and understandable way 
+       </div>
+       <div class="input-form">
+            <form action="" method="GET">
+                <div class="Questions" id="Question1">
+                    <div class="Subject">
+                        <label for="subject">Choose the subject which you want to add question for :</label>
+                        <select name="Subject" id="subject">
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="English">English</option>
+                            <option value="Chemistry">Chemistry</option>
+                            <option value="History">History</option>
+                            <option value="audi">Physics</option>
+                        </select>
+                    </div>
+                    <div class="Question-block">
+                            <input class="question" required placeholder="type your question here">
+                            
+                                <input  class="option1" placeholder="Enter option 1" name="option1" required>  
+                            
+                                <input  class="option2" placeholder="Enter option 2" name="option2" required> 
+
+                                <input  class="option3" placeholder="Enter option 3" name="option3" required >  
+                    </div>
+                </div>
+            <button type="submit" class="btn btn-background-cover">Submit</button>
+            <button type="submit" onclick=insert() class="btn btn-background-cover">Add Question</button>
+        
+            </form>
+       </div>
+    </div>
+    
+
+</body>
+</html>
