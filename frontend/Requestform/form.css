@@ -17,6 +17,7 @@ body{
     background-image: url(form.jpg);
     background-size:cover; 
     background-position: center; 
+    overflow-x:hidden; 
     
 }
 
