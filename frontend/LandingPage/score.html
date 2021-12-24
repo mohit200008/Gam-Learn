@@ -25,44 +25,59 @@
 
     .scores {
         display: flex;
-        flex-direction: column;
         gap: 20px;
+        justify-content: space-evenly;
     }
 
     .subject-scores {
         font-size: 20px;
         display: flex;
         align-items: center;
+        flex-direction: column;
         gap: 20px;
+    }
+
+    .score {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .user-score span {
+        margin-left: 8px;
     }
 </style>
 
 <body>
     <div class="score-container">
-        <h1 class="score-heading">Last Quiz Scores</h1>
+        <h1 class="score-heading">Quiz Scores</h1>
         <div class="scores">
             <div class="subject-scores">
-                <div class="subject">Chemistry :</div>
+                <div class="subject">Chemistry</div>
                 <div class="score"></div>
             </div>
             <div class="subject-scores">
-                <div class="subject">English :</div>
+                <div class="subject">English</div>
                 <div class="score"></div>
             </div>
             <div class="subject-scores">
-                <div class="subject">History :</div>
+                <div class="subject">History</div>
                 <div class="score"></div>
             </div>
             <div class="subject-scores">
-                <div class="subject">Maths :</div>
+                <div class="subject">Maths</div>
                 <div class="score"></div>
             </div>
             <div class="subject-scores">
-                <div class="subject">Physics :</div>
+                <div class="subject">Physics</div>
                 <div class="score"></div>
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
     <script src="score.js"></script>
 </body>
 

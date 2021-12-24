@@ -101,7 +101,7 @@ function gameOver(winner) {
         email: user.email,
         subject: "maths",
         score: correctAnswers,
-        date: new Date()
+        time: new Date()
       }).then(() => {
         window.location.href = "/frontend/LandingPage/score.html";
       })
