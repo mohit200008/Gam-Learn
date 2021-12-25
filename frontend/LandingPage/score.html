@@ -11,45 +11,72 @@
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/score.css" rel="stylesheet">
 </head>
-<style>
-    /* temporary styling */
 
-    .score-heading {
-        margin-bottom: 30px;
-    }
-
-    .score-container {
-        padding: 20px;
-    }
-
-    .scores {
-        display: flex;
-        gap: 20px;
-        justify-content: space-evenly;
-    }
-
-    .subject-scores {
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .score {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        font-size: 14px;
-    }
-
-    .user-score span {
-        margin-left: 8px;
-    }
-</style>
 
 <body>
+    <nav class="container">
+        <header id="header"
+          class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    
+    
+    
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
+            Gam-Learn
+          </a>
+    
+          <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+            style="list-style-type:none;">
+            <li><a href="#hero" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
+            <li><a href="#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
+            <li><a href="stud-sc.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Subjects</a></li>
+            <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span> <i
+                  class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="../LandingPageHi/index.html">Hindi</a></li>
+              </ul>
+            </li>
+            <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
+            <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Add question</a>
+            </li>
+          </ul>
+    
+          <i class="bi bi-list mobile-nav-toggle"></i>
+          <div class="col-md-3 text-end" id="logout">
+            <button type="button" class="btn btn-outline-primary me-2"
+              onclick="location.href='../index.html'">Logout</button>
+          </div>
+    
+    
+    
+    
+          <!-- <div class="container d-flex align-items-center justify-content-between">
+      
+            <h1 class="logo"><a href="index.html">Gam-Learn</a></h1>
+      
+            <nav id="navbar" class="navbar">
+              <ul style="list-style-type:none;">
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="#about">About Gam-Learn</a></li> -->
+          <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">English</a></li>
+                    <li><a href="../LandingPageHi/index.html">Hindi</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+      
+          </div> -->
+    
+    
+        </header>
+      </nav>
     <div class="score-container">
         <h1 class="score-heading">Quiz Scores</h1>
         <div class="scores">
