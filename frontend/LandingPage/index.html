@@ -14,7 +14,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/chat.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="home-script.js" defer></script>
+  <script src="home-script.js" defer></script> 
+<script src="assets/js/main.js" defer></script>
+
 </head>
 
 <body>
@@ -42,16 +44,19 @@
             <li><a href="../LandingPageHi/index.html">Hindi</a></li>
           </ul>
         </li>
-        <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Check Scores</a></li>
+        <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
         <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Add question</a>
         </li>
       </ul>
 
       <i class="bi bi-list mobile-nav-toggle"></i>
-      <div class="col-md-3 text-end" id="logout">
-        <button type="button" class="btn btn-outline-primary me-2"
-          onclick="location.href='../index.html'">Logout</button>
-
+      <div class="col-md-3 text-end" id="logout" style="display:flex;">
+        <div class="logged-user" style="color:#02182b;  margin-left: 45px;margin-top:3px;font-size: 20px;">
+        </div>
+        <div style="flex:1;">
+          <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../index.html'"
+            id="logout-btn">Logout</button>
+        </div>
       </div>
 
 
@@ -447,12 +452,15 @@
 
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="../LandingPage/auth.js"></script>
 
     <script src="assets/js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="chat.js"></script>
     <script src="responses.js"></script>
-
 </body>
 
 </html>
