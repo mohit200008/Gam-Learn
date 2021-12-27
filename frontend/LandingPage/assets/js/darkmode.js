@@ -1,4 +1,5 @@
-const toggleBtn = document.querySelector('.toggle-btn');
+const darkModeCheckBox = document.querySelector('.dark-mode-checkbox');
+const toggleMover = document.querySelector('.toggle-mover');
 const body = document.body;
 const navLinks = document.querySelectorAll('.nav-link');
 const header = document.querySelector('#header');
@@ -14,19 +15,13 @@ const subscribeForm = document.querySelector('.subscribe-form');
 const navigationPane = document.querySelector('.navigation-pane');
 const rightsNotice = document.querySelector('.rights-notice');
 
-toggleBtn.addEventListener('click', () => {
-    if (toggleBtn.innerText === 'Dark Mode') {
-        toggleBtn.innerText = 'Light Mode'
-    } else {
-        toggleBtn.innerText = 'Dark Mode';
-    }
+darkModeCheckBox.addEventListener('click', () => {
     body.classList.toggle('dark-mode-body');
     header.classList.toggle('dark-mode-header');
     logo.classList.toggle('dark-mode-logo');
     navLinks.forEach(link => {
         link.classList.toggle('dark-mode-navlink');
     })
-    toggleBtn.classList.toggle('dark-mode-toggle-btn');
     loggedUser.classList.toggle('dark-mode-logged-user');
     knowMoreHeading.classList.toggle('dark-mode-know-more-heading');
     cardBig.classList.toggle('dark-mode-card-big');
