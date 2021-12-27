@@ -1,0 +1,112 @@
+.dark-mode-body {
+  background: #222325 !important;
+}
+
+.dark-mode-header {
+  background: #282a2e !important;
+}
+
+.dark-mode-navlink {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.dark-mode-logged-user {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.dark-mode-logo {
+  color: rgba(239, 241, 246, 0.9) !important;
+}
+
+.dark-mode-toggle-btn {
+  color: #272222;
+  background: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dark-mode-know-more-heading {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.dark-mode-card-big {
+  background: #2e2f31 !important;
+}
+
+.dark-mode-card-big h1 {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dark-mode-card-big p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-mode-card-medium {
+  background: #2e2f31 !important;
+}
+
+.dark-mode-card-medium h2 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode-card-medium p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-mode-card-medium button {
+  color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dark-mode-card-contact {
+  background: #3e3f3f !important;
+}
+
+.dark-mode-card-subjects {
+  background: #3e3f3f !important;
+}
+
+.dark-mode-sub-card {
+  background: #5c5c5c !important;
+  box-shadow: 0 2px 22px #1f1f1fe6 !important;
+}
+
+.dark-mode-sub-card h3,
+.dark-mode-sub-card p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode-card-small {
+  background: #2e2f31 !important;
+}
+
+.dark-mode-card-small .card-footer {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dark-mode-card-small .card-header,
+.dark-mode-card-small .card-title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.dark-mode-card-small p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-mode-subscribe-form h5 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode-subscribe-form p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dark-mode-navigation-pane {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode-navigation-pane a {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dark-mode-rights-notice p {
+  color: rgba(255, 255, 255, 0.9);
+}

@@ -12,10 +12,11 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/darkstyle.css">
   <link href="assets/css/chat.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="home-script.js" defer></script> 
-<script src="assets/js/main.js" defer></script>
+  <script src="home-script.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 
 </head>
 
@@ -24,8 +25,6 @@
   <nav class="container">
     <header id="header"
       class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-
-
 
       <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
         Gam-Learn
@@ -48,12 +47,15 @@
         <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Add question</a>
         </li>
       </ul>
-
       <i class="bi bi-list mobile-nav-toggle"></i>
-      <div class="col-md-3 text-end" id="logout" style="display:flex;">
-        <div class="logged-user" style="color:#02182b;  margin-left: 45px;margin-top:3px;font-size: 20px;">
-        </div>
-        <div style="flex:1;">
+      <div class="col-md-3 text-end" id="logout"
+        style="display:flex; justify-content: space-around; align-items: center;">
+        <label class="switch">
+          <input class="dark-mode-checkbox" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <div class="logged-user" style="color:#02182b;margin-top:3px;font-size:17px;"></div>
+        <div>
           <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../index.html'"
             id="logout-btn">Logout</button>
         </div>
@@ -165,12 +167,12 @@
       <section class="pb-3 mb-4 border-bottom">
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
 
-          <span class="fs-2">Know About Gam-Learn</span>
+          <span class="fs-2 know-more-heading">Know About Gam-Learn</span>
         </a>
 
       </section>
 
-      <div class="p-5 mb-4 bg-light rounded-3" data-aos="fade-up">
+      <div class="p-5 mb-4 bg-light rounded-3 card-big" data-aos="fade-up">
         <div class="container-fluid py-5">
           <section>
             <h1 class="display-5 fw-bold">What Gam-Learn delivers?</h1>
@@ -250,7 +252,7 @@
 
       <div class="row align-items-md-stretch" data-aos="fade-up">
         <div class="col-md-6">
-          <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <div class="h-100 p-5 text-white bg-dark rounded-3 card-contact">
             <h2>Contact Us</h2>
             <p>Contact: +1 111-1111111</p>
             <p>Email: <a href="mailto:example@gamlearn.com">example@gamlearn.com</a></p>
@@ -260,7 +262,7 @@
           </div>
         </div>
         <div class="col-md-6" data-aos="fade-up">
-          <div class="h-100 p-5 bg-light border rounded-3">
+          <div class="h-100 p-5 bg-light border rounded-3 card-medium">
             <h2>Are you a teacher? Join Gam-Learn now!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, minima. Accusantium, est, iste
               facilis ad placeat quibusdam facere, perspiciatis aliquam laudantium molestias ipsum? Tempore dignissimos
@@ -274,136 +276,134 @@
     </div>
   </div>
 
-  <main id="main">
 
-    <section id="subjects" class="subjectss">
-      <div class="container" data-aos="fade-up">
+  <section id="subjects" class="subjectss">
+    <div class="container card-subjects" data-aos="fade-up">
 
-        <a href="./Questions/Maths/index.html">
-          <div class="subcard">
-            <div class="imagebox">
-              <img alt="maths" src="assets/img/maths.jpg">
-            </div>
-            <div class="content">
-              <h3>MATHS</h3>
-              <p class="description">Mathematics is the most beautiful and most powerful creation of the human spirit.
-              </p>
-            </div>
+      <a href="./Questions/Maths/index.html">
+        <div class="subcard">
+          <div class="imagebox">
+            <img alt="maths" src="assets/img/maths.jpg">
           </div>
-        </a>
-        <a href="./Questions/English/index.html">
-          <div class="subcard">
-            <div class="imagebox  special">
-              <img src="assets/img/english.jpeg">
-            </div>
-            <div class="content">
-              <h3>ENGLISH</h3>
-              <p class="description">Today a reader, tomorrow a leader.</p>
-            </div>
-          </div>
-        </a>
-        <a href="./Questions/History/index.html">
-          <div class="subcard">
-            <div class="imagebox">
-              <img src="assets/img/history.jpeg">
-            </div>
-            <div class="content">
-              <h3>HISTORY</h3>
-              <p class="description">We are not makers of history. We are made by history.</p>
-            </div>
-          </div>
-        </a>
-        <a href="./Questions/Physics/index.html">
-          <div class="subcard">
-            <div class="imagebox">
-              <img src="assets/img/physics.jpeg">
-            </div>
-            <div class="content">
-              <h3>PHYSICS</h3>
-              <p class="description">Physics is really nothing more than a search for ultimate simplicity, but so far
-                all we have is a kind of elegant messiness.</p>
-            </div>
-          </div>
-        </a>
-        <a href="./Questions/Chem/index.html">
-          <div class="subcard">
-            <div class="imagebox">
-              <img src="assets/img/chemistry.jpeg">
-            </div>
-            <div class="content">
-              <h3>CHEMISTRY</h3>
-              <p class="description">"One thing that you cant fake is chemistry." ~ Blake Shelton</p>
-            </div>
-          </div>
-        </a>
-
-
-
-      </div>
-    </section> -->
-
-
-    <div class="container">
-      <footer class="py-5">
-
-        <div class="row">
-
-
-          <div class="col-2">
-            <h5 class="fs-4">Navigation Pane</h5>
-            <ul class="nav flex-column fs-5">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
-          </div>
-
-
-
-          <div class="col-4 offset-1">
-            <form>
-              <h5 class="fs-4">Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
-
-          <div class="card text-center col-4 d-flex">
-            <div class="card-header fs-5">
-              Why Gam-Learn?
-            </div>
-            <div class="card-body">
-
-              <p class="card-text fs-6">We all know about the impact of COVID-19 and its impacts and we all know that it
-                has presented an unprecedented challenge to the education system. It is still all-right for the senior
-                students but the junior students are the ones who needs regular interaction and our current mode of
-                exams is not able to provide this to them.
-              <h5 class="card-title fs-4">How we responded?</h5>
-              <p class="fs-6">We have designed an quiz portal which will be in a form of a game, as we all know that
-                games are one of the best way of get interests of students.</p>
-              </p>
-            </div>
-            <div class="card-footer text-muted">
-              Innovation & you!
-            </div>
+          <div class="content">
+            <h3>MATHS</h3>
+            <p class="description">Mathematics is the most beautiful and most powerful creation of the human spirit.
+            </p>
           </div>
         </div>
-
-        <div class="d-flex justify-content-between py-4 my-4 border-top">
-          <p>© 2021 Gam-Learn, Inc. All rights reserved.</p>
-
+      </a>
+      <a href="./Questions/English/index.html">
+        <div class="subcard">
+          <div class="imagebox  special">
+            <img src="assets/img/english.jpeg">
+          </div>
+          <div class="content">
+            <h3>ENGLISH</h3>
+            <p class="description">Today a reader, tomorrow a leader.</p>
+          </div>
         </div>
-      </footer>
+      </a>
+      <a href="./Questions/History/index.html">
+        <div class="subcard">
+          <div class="imagebox">
+            <img src="assets/img/history.jpeg">
+          </div>
+          <div class="content">
+            <h3>HISTORY</h3>
+            <p class="description">We are not makers of history. We are made by history.</p>
+          </div>
+        </div>
+      </a>
+      <a href="./Questions/Physics/index.html">
+        <div class="subcard">
+          <div class="imagebox">
+            <img src="assets/img/physics.jpeg">
+          </div>
+          <div class="content">
+            <h3>PHYSICS</h3>
+            <p class="description">Physics is really nothing more than a search for ultimate simplicity, but so far
+              all we have is a kind of elegant messiness.</p>
+          </div>
+        </div>
+      </a>
+      <a href="./Questions/Chem/index.html">
+        <div class="subcard">
+          <div class="imagebox">
+            <img src="assets/img/chemistry.jpeg">
+          </div>
+          <div class="content">
+            <h3>CHEMISTRY</h3>
+            <p class="description">"One thing that you cant fake is chemistry." ~ Blake Shelton</p>
+          </div>
+        </div>
+      </a>
+
+
+
     </div>
+  </section>
 
 
-    <!-- <section id="about" class="about section-bg">
+  <div class="container">
+    <footer class="py-5">
+
+      <div class="row">
+
+
+        <div class="col-2 navigation-pane">
+          <h5 class="fs-4">Navigation Pane</h5>
+          <ul class="nav flex-column fs-5">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-4 offset-1">
+          <form class="subscribe-form">
+            <h5 class="fs-4">Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card text-center col-4 d-flex card-small">
+          <div class="card-header fs-5">
+            Why Gam-Learn?
+          </div>
+          <div class="card-body">
+
+            <p class="card-text fs-6">We all know about the impact of COVID-19 and its impacts and we all know that it
+              has presented an unprecedented challenge to the education system. It is still all-right for the senior
+              students but the junior students are the ones who needs regular interaction and our current mode of
+              exams is not able to provide this to them.
+            <h5 class="card-title fs-4">How we responded?</h5>
+            <p class="fs-6">We have designed an quiz portal which will be in a form of a game, as we all know that
+              games are one of the best way of get interests of students.</p>
+            </p>
+          </div>
+          <div class="card-footer text-muted">
+            Innovation & you!
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between py-4 my-4 border-top rights-notice">
+        <p>© 2021 Gam-Learn, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- <section id="about" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -450,17 +450,18 @@
 
 
 
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
-    <script src="../LandingPage/auth.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/darkmode.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+  <script src="../LandingPage/auth.js"></script>
 
-    <script src="assets/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="chat.js"></script>
-    <script src="responses.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="chat.js"></script>
+  <script src="responses.js"></script>
 </body>
 
 </html>
