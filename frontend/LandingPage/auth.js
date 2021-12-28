@@ -8,14 +8,22 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-
 const auth = firebase.auth();
+const db = firebase.firestore();
 
+const addQuestionLink = document.querySelector('.add-question-link');
 const loggedUser = document.querySelector('.logged-user');
 const toggleOnAuth = document.querySelector('.toggle-on-auth');
+addQuestionLink.style.display = 'none';
 
 auth.onAuthStateChanged((user) => {
     if (user) {
+        db.collection('user-info').doc(user.uid).get().then((doc) => {
+            const data = doc.data();
+            if (data.type !== 'user') {
+                addQuestionLink.style.display = 'initial';
+            }
+        })
         logout.innerText = 'Logout';
         loggedUser.innerText = user.email;
     } else {
