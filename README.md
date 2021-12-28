@@ -3,11 +3,13 @@
 
 
 
-## For logging in
+## For logging in (user)
 id: test12@gmail.com
 password: test123
 
-
+## For logging in (admin)
+id: testadmin12@gmail.com
+password: testadmin123
 
 
 ## Problem Statement

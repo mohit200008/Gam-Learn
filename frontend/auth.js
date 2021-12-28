@@ -30,21 +30,18 @@ function signUp() {
 
         auth.createUserWithEmailAndPassword(email, password)
             .then(cred => {
-                console.log(cred.user);
-                let user = auth.currentUser;
-                user.updateProfile({ displayName: name })
-                    .then(() => {
-                        console.log('Name updated');
-                    }).catch(err => {
-                        console.log(err);
-                    });
+                return db.collection('user-info').doc(cred.user.uid).set({
+                    email: email,
+                    type: "user"
+                })
+            }).then(() => {
                 window.alert('You are logged in');
                 window.location.href = "LandingPage/index.html";
                 signupForm.reset();
             })
             .catch(err => {
                 const errorMsg = err.message;
-                console.log(window.alert(errorMsg));
+                window.alert(errorMsg);
             })
     })
 }
@@ -58,7 +55,6 @@ function signIn() {
         const password = signinForm['signin-password'].value;
         auth.signInWithEmailAndPassword(email, password)
             .then(cred => {
-                console.log(cred.user);
                 window.location.href = "LandingPage/index.html";
             })
             .catch(err => {

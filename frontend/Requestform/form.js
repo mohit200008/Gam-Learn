@@ -13,6 +13,19 @@ const db = firebase.firestore();
 
 db.settings({ timestampsInSnapshots: true });
 
+auth.onAuthStateChanged((user) => {
+    if (user) {
+        db.collection('user-info').doc(user.uid).get().then((doc) => {
+            const data = doc.data();
+            if (data.type === 'user') {
+                window.location.replace("/frontend/LandingPage/index.html");
+            }
+        })
+    } else {
+        window.location.replace("/frontend/index.html");
+    }
+});
+
 const Question = document.querySelector("#Question1");
 let i = 2;
 function insert() {
