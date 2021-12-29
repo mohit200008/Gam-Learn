@@ -654,3 +654,41 @@ input:checked + .slider:before {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+.row{
+   margin:0; 
+   padding:0; 
+   display:flex; 
+   justify-content: space-around;
+}
+.spe780row{
+  margin:0; 
+  padding:0; 
+  display:flex;
+  justify-content: space-around;
+  width:max-content;
+}
+
+.subscribe-form{
+  display:flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position:relative; 
+}
+.subscribe-form d-flex{
+ flex-wrap: wrap;
+}
+
+@media screen and (max-width:993px){
+    .spe780row{
+      width:100%;
+    }
+    footer .row .card.col-4{
+      width:100%;
+    }
+    .dabs{
+      position:absolute;
+      margin-top: 50px;
+    }
+}
