@@ -24,13 +24,14 @@
 
   <nav class="container">
     <header id="header"
-      class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
 
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
+      <a href="/" class="d-flex align-items-center  mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
         Gam-Learn
       </a>
-
-      <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+      <i class="bi bi-list natoggle-button"></i>
+      <div class="navbarlinks">
+      <ul id="navbar"  class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
         style="list-style-type:none;">
         <li><a href="#hero" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
         <li><a href="#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
@@ -45,12 +46,12 @@
         </li>
         <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
         <li><a href="../Requestform/form.html"
-            class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link">Add question</a>
+            class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link" style="display:block">Add question</a>
         </li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-      <div class="col-md-3 text-end" id="logout"
-        style="display:flex; justify-content: space-around; align-items: center;">
+    </div>
+      
+      <div class="col-md-3 text-end" id="logout">
         <label class="switch">
           <input class="dark-mode-checkbox" type="checkbox">
           <span class="slider round"></span>
@@ -61,6 +62,8 @@
             id="logout-btn">Logout</button>
         </div>
       </div>
+
+      
 
 
 
@@ -449,7 +452,16 @@
     </section> -->
 
 
+<script>
+  //navbar script
+  const toggleButton = document.getElementsByClassName('natoggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
 
+toggleButton.addEventListener('click', () => {
+  console.log("ham burger triggered!")
+  navbarLinks.classList.toggle('active')
+})
+</script>
 
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -463,6 +475,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="chat.js"></script>
   <script src="responses.js"></script>
+
 </body>
 
 </html>

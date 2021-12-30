@@ -40,13 +40,15 @@ function toaster() {
 
   <nav class="container">
     <header id="header"
-      class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
 
 
 
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
+      <a href="/" class="d-flex align-items-center  mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
         Gam-Learn
       </a>
+      <i class="bi bi-list natoggle-button"></i>
+      <div class="navbarlinks">
 
       <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
         style="list-style-type:none;">
@@ -63,13 +65,17 @@ function toaster() {
         <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
         <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Add question</a>
         </li>
+        
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-      <div class="col-md-3 text-end" id="logout" style="display: flex;">
-        <div class="logged-user" style="color:#02182b; margin-left: 45px;margin-top:3px;font-size: 20px;">
-        </div>
-        <div style="flex: 1;">
-          <button id="logout-btn" type="button" class="btn btn-outline-primary me-2" onclick="">Logout</button>
+      <div class="col-md-3 text-end" id="logout" >
+        <label class="switch">
+          <input class="dark-mode-checkbox" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <div class="logged-user" style="color:#02182b;margin-top:3px;font-size:17px;"></div>
+        <div>
+          <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../index.html'"
+            id="logout-btn">Logout</button>
         </div>
       </div>
 
@@ -408,7 +414,16 @@ function toaster() {
     </section> -->
 
 
-
+    <script>
+      //navbar script
+      const toggleButton = document.getElementsByClassName('natoggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
+    
+    toggleButton.addEventListener('click', () => {
+      console.log("ham burger triggered!")
+      navbarLinks.classList.toggle('active')
+    })
+    </script>
 
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
