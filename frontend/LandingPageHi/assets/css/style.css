@@ -55,23 +55,23 @@ h6 {
   padding-left: 50px;
 }
 
-#logout {
-  padding-right: 50px;
-}
 #header #logo a {
   color: #dfd5d5;
 }
+
 #logout {
-  display:flex; 
+  display: flex;
   /* justify-content: space-around; */
   align-items: center;
   /* margin-right: 70px; */
   /* right:1.5rem;  */
-}
-#logout .logged-user{
-  margin:0 10px; 
+  min-width: fit-content;
+  padding-right: 40px;
 }
 
+#logout .logged-user {
+  margin: 0 10px;
+}
 
 #header .logo a span {
   color: #91b2dd;
@@ -234,74 +234,71 @@ h6 {
     display: none;
   }
 }
-.natoggle-button{
+.natoggle-button {
   position: absolute;
-  top:3rem; 
-  right:1em; 
+  top: 3rem;
+  right: 1em;
   cursor: pointer;
   font-size: 2rem;
   transform: translateY(-70%);
 }
-header i{
- position:absolute; 
- top:49%; 
- right:.5rem; 
- transform: translateY(-50%);
+header i {
+  position: absolute;
+  top: 49%;
+  right: 0.5rem;
+  transform: translateY(-50%);
 }
 @media (max-width: 1400px) {
   .natoggle-button {
     display: block;
   }
-  .navbarlinks{
-    display:none; 
-   width:100%;
-  
-   height:0; 
-   transform-origin: top;
-   transition: 1s ease-in-out;
+  .navbarlinks {
+    display: none;
+    width: 100%;
+
+    height: 0;
+    transform-origin: top;
+    transition: 1s ease-in-out;
   }
 
   .navbarlinks ul {
-    width:100%;
-    top:1rem; 
+    width: 100%;
+    top: 1rem;
     /* position:absolute;  */
-    display:flex; 
+    display: flex;
     flex-direction: column;
-   
   }
-  .navbarlinks ul li{
-    width:100%; 
-    background-color: black; 
-    
+  .navbarlinks ul li {
+    width: 100%;
+    background-color: black;
   }
   .navbarlinks ul li a {
-    width:100%; 
+    width: 100%;
 
-    color:white; 
+    color: white;
   }
-  .navbarlinks.active{
-    display:flex; 
-    width:100%;
-    height:max-content; 
+  .navbarlinks.active {
+    display: flex;
+    width: 100%;
+    height: max-content;
   }
-  #logout{
+  #logout {
     transform: translateY(-40%);
-    position:absolute;
-    right:10em;
-    top:2.5rem;
-    
+    position: absolute;
+    right: 10em;
+    top: 2.5rem;
   }
-  #header.fixed-top{
-    height:110px;
+  #header.fixed-top {
+    height: 110px;
   }
-  #logo{
-    height:78px;
+  #logo {
+    height: 78px;
   }
 }
 
-@media screen and (min-width:1400px){
-  .natoggle-button{
-    display:none; 
+@media screen and (min-width: 1400px) {
+  .natoggle-button {
+    display: none;
   }
 }
 .navbar-mobile {
@@ -401,7 +398,6 @@ header i{
   width: 60px;
   height: 30px;
   margin-right: 10px;
-
 }
 
 .switch input {
@@ -535,24 +531,22 @@ input:checked + .slider:before {
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #logout{
+  #logout {
     /* transform: translateX(500%); */
     transform: translateY(-40%);
-    position:absolute;
-    right:auto;
-    left:auto;
-    top:5rem;
-    margin:0 auto; 
-    
+    position: absolute;
+    right: auto;
+    left: auto;
+    top: 5rem;
+    margin: 0 auto;
   }
-    .navbarlinks ul{
-      top:.4rem;
-    }
-    #header #logo{
-     padding-top: 0!important;
-     transform: translateY(-20%);
-    }
-
+  .navbarlinks ul {
+    top: 0.4rem;
+  }
+  #header #logo {
+    padding-top: 0 !important;
+    transform: translateY(-20%);
+  }
 }
 
 @media (max-height: 500px) {
@@ -758,41 +752,41 @@ input:checked + .slider:before {
   margin-bottom: 0;
 }
 
-.row{
-  margin:0; 
-  padding:0; 
-  display:flex; 
+.row {
+  margin: 0;
+  padding: 0;
+  display: flex;
   justify-content: space-around;
 }
-.spe780row{
- margin:0; 
- padding:0; 
- display:flex;
- justify-content: space-around;
- width:max-content;
+.spe780row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: max-content;
 }
 
-.subscribe-form{
- display:flex; 
- justify-content: center; 
- align-items: center;
- flex-direction: column;
- flex-wrap: wrap;
- position:relative; 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
 }
-.subscribe-form d-flex{
-flex-wrap: wrap;
+.subscribe-form d-flex {
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width:993px){
-   .spe780row{
-     width:100%;
-   }
-   footer .row .card.col-4{
-     width:100%;
-   }
-   .dabs{
-     position:absolute;
-     margin-top: 50px;
-   }
+@media screen and (max-width: 993px) {
+  .spe780row {
+    width: 100%;
+  }
+  footer .row .card.col-4 {
+    width: 100%;
+  }
+  .dabs {
+    position: absolute;
+    margin-top: 50px;
+  }
 }
