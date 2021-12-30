@@ -10,9 +10,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
   <link href="assets/css/style2.css" rel="stylesheet">
   <link href="assets/css/pie.css" rel="stylesheet">
+  
 </head>
 
 <!-- <script>
@@ -36,45 +38,78 @@ function toaster() {
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/js/main.js"></script>
 
-<body onload="toaster();">
+<body onload="toaster();" >
+ 
   <nav class="container">
     <header id="header"
-      class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      class="d-flex align-items-center flex-wrap  justify-content-md-between py-3  border-bottom">
 
-
-
-      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
+      <a href="/" class="d-flex align-items-center  mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
         Gam-Learn
       </a>
-
-      <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+      <i class="bi bi-list natoggle-button"></i>
+      <div class="navbarlinks">
+      <ul id="navbar"  class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
         style="list-style-type:none;">
-        <li><a href="index.html" class="nav-link px-2 link-secondary fs-5 fw-bold">Home</a></li>
-        <li><a href="index.html#about" class="nav-link px-2 link-dark fs-5 fw-bold">About</a></li>
+        <li><a href="index.html" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
+        <li><a href="index.html#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
         <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
+        <li><a href="stud-sc.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Subjects</a></li>
         <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span> <i
               class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a href="#">English</a></li>
-            <li><a href="../LandingPageHi/stud-sc.html">Hindi</a></li>
+            <li><a href="../LandingPageHi/index.html">Hindi</a></li>
           </ul>
         </li>
         <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
-        <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Add question</a>
+        <li><a href="../Requestform/form.html"
+            class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link" style="display:block">Add question</a>
         </li>
       </ul>
-      <i class="bi bi-list mobile-nav-toggle"></i>
-      <div class="col-md-3 text-end" id="logout" style="display: flex;">
-        <div class="logged-user" style="color:#02182b; margin-left: 45px;margin-top:3px;font-size: 20px;">
-        </div>
-        <div style="flex: 1;">
-          <button id="logout-btn" type="button" class="btn btn-outline-primary me-2" onclick="">Logout</button>
+    </div>
+      
+      <div class="col-md-3 text-end" id="logout">
+        <label class="switch">
+          <input class="dark-mode-checkbox" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <div class="logged-user" style="color:#02182b;margin-top:3px;font-size:17px;"></div>
+        <div>
+          <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../index.html'"
+            id="logout-btn">Logout</button>
         </div>
       </div>
 
+      
+
+
+
+
+      <!-- <div class="container d-flex align-items-center justify-content-between">
+  
+        <h1 class="logo"><a href="index.html">Gam-Learn</a></h1>
+  
+        <nav id="navbar" class="navbar">
+          <ul style="list-style-type:none;">
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About Gam-Learn</a></li> -->
+      <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
+      <!-- <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">English</a></li>
+                <li><a href="../LandingPageHi/index.html">Hindi</a></li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+  
+      </div> -->
+
+
     </header>
   </nav>
-
 
   <div id="hero" class="d-flex align-items-center" data-aos="fade-right">
     <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -182,12 +217,12 @@ function toaster() {
     </div>
   </div>
 
-
+<!-- 
   <div class="position-fixed bottom-0 p-3" style="z-index: 1111">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
+      <div class="toast-header"> -->
         <!-- <img src="..." class="rounded me-2" alt="..."> -->
-        <strong class="me-auto">Gam-Learn Learning AI Assistant</strong>
+       <!--  <strong class="me-auto">Gam-Learn Learning AI Assistant</strong>
         <small>Just now.</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
@@ -195,11 +230,11 @@ function toaster() {
         Hi {student.name}. Keep up practicing on your {learn.day} streak.
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 
-  <div id="about" class="" data-aos="fade-up">
+  <div id="about" class="progresSection" data-aos="fade-up">
     <div class="p-5 mb-4 rounded-3" data-aos="fade-up">
       <div class="pb-3 mb-4 border-bottom" id="progress">
         <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
@@ -306,7 +341,7 @@ function toaster() {
 
         <div class="row">
 
-
+          <div class="spe780row">
           <div class="col-2">
             <h5 class="fs-4">Navigation Pane</h5>
             <ul class="nav flex-column fs-5">
@@ -320,18 +355,18 @@ function toaster() {
 
 
 
-          <div class="col-4 offset-1">
+          <div class="col-4 offset-1"  style="margin-right: 50px;">
             <form>
               <h5 class="fs-4">Subscribe to our newsletter</h5>
               <p>Monthly digest of whats new and exciting from us.</p>
               <div class="d-flex w-100 gap-2">
                 <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                <button class="btn btn-primary" type="button">Subscribe</button>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" style="width:200px">
+                <button class="btn btn-primary dabs" type="button">Subscribe</button>
               </div>
             </form>
           </div>
-
+        </div>
           <div class="card text-center col-4 d-flex">
             <div class="card-header fs-5">
               Why Gam-Learn?
@@ -406,7 +441,16 @@ function toaster() {
     </section> -->
 
 
-
+    <script>
+      //navbar script
+      const toggleButton = document.getElementsByClassName('natoggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
+    
+    toggleButton.addEventListener('click', () => {
+      console.log("ham burger triggered!")
+      navbarLinks.classList.toggle('active')
+    })
+    </script>
 
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>;

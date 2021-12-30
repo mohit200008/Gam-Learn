@@ -3,6 +3,11 @@ nav{
     min-width: 100vw; 
 }
 
+@media (max-width: 768px) {
+    #header{
+        height:110px;
+    }
+}
 
 .score-container {
     margin-left:auto;
