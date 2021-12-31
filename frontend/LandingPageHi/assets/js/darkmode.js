@@ -15,7 +15,10 @@ const subscribeForm = document.querySelector('.subscribe-form');
 const navigationPane = document.querySelector('.navigation-pane');
 const rightsNotice = document.querySelector('.rights-notice');
 
+
 darkModeCheckBox.addEventListener('click', () => {
+    let ui=localStorage.getItem("ui");
+    let uiclk=localStorage.getItem("uiclk");
     body.classList.toggle('dark-mode-body');
     header.classList.toggle('dark-mode-header');
     logo.classList.toggle('dark-mode-logo');
@@ -35,4 +38,11 @@ darkModeCheckBox.addEventListener('click', () => {
     navigationPane.classList.toggle('dark-mode-navigation-pane');
     subscribeForm.classList.toggle('dark-mode-subscribe-form');
     rightsNotice.classList.toggle('dark-mode-rights-notice');
+    if (ui==="dark"){if(uiclk==="jsb"){   
+        localStorage.removeItem("ui");
+        localStorage.setItem("ui","light");}
+    }else{
+        localStorage.setItem("ui","dark");
+    }
+    localStorage.removeItem("uiclk");
 })

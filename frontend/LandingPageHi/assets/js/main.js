@@ -191,7 +191,6 @@
 
 })()
 
-
 $('#foo-p').on('click', function(e) {
   if( $(e.target).is('#rs-phys')  ) {
       e.preventDefault();
@@ -287,4 +286,24 @@ function rs(rsid) {
     }
   }
 
+}
+
+function ui_mode() {
+  // localStorage.setItem("ui","light");
+  let ui = localStorage.getItem("ui");
+  if (ui==="dark") {
+    eventFire(document.getElementById('mode_switch'), 'click');
+    document.getElementById('mode_switch').setAttribute("checked","checked");
+    localStorage.setItem("uiclk","jsb");
+  }
+}
+
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
 }
