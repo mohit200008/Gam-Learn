@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="test-attempted">
+        <div class="test-attempted-heading">Total Tests Attempted</div>
+        <div class="test-attempted-count"></div>
+    </div>
+    <div class="subject-wise-test">
+        <div class="subject-wise-test-heading">Subject Wise Tests Attempted</div>
+        <div class="subject-wise-test-attempted"></div>
+    </div>
+    <div class="recent-tests">
+        <div class="recent-tests-heading">Recent Tests</div>
+        <table class="recent-test-table">
+            <tr>
+                <th>Subject</th>
+                <th>Score</th>
+                <th>Date</th>
+            </tr>
+        </table>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

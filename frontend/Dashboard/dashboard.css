@@ -1,0 +1,62 @@
+.test-attempted {
+  margin-top: 40px;
+}
+
+.test-attempted,
+.subject-wise-test {
+  margin-bottom: 20px;
+}
+
+.test-attempted-heading,
+.subject-wise-test-heading,
+.recent-tests-heading {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.test-attempted-count,
+.subject-wise-test-attempted {
+  font-size: 18px;
+  text-align: center;
+}
+
+.user-subject {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 3px;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.recent-test-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.recent-test-table td,
+.recent-test-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.recent-test-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.recent-test-table tr:hover {
+  background-color: #ddd;
+}
+
+.recent-test-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #636464;
+  color: white;
+}
