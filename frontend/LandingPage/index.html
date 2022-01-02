@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body onload="ui_mode();">
 
   <nav class="container">
     <header id="header"
@@ -53,7 +53,7 @@
       
       <div class="col-md-3 text-end" id="logout">
         <label class="switch">
-          <input class="dark-mode-checkbox" type="checkbox">
+          <input id="mode_switch" class="dark-mode-checkbox" type="checkbox">
           <span class="slider round"></span>
         </label>
         <a href="../Dashboard/dashboard.html" class="logged-user" style="color:#02182b;margin-top:3px;font-size:17px;"></a>
