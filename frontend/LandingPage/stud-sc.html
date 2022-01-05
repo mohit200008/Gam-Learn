@@ -10,65 +10,42 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
 
   <link href="assets/css/style2.css" rel="stylesheet">
   <link href="assets/css/pie.css" rel="stylesheet">
-  
 </head>
 
-<!-- <script>
-var toastTrigger = document.getElementById('liveToastBtn')
-var toastLiveExample = document.getElementById('liveToast')
-function toaster() {
-    var toastTrigger = document.getElementById('liveToastBtn');
-    var toastLiveExample = document.getElementById('liveToast');
-    var toast = new bootstrap.Toast(toastLiveExample);
-    toast.show();
-
-//     toastTrigger.addEventListener('click', function () {
-//     var toast = new bootstrap.Toast(toastLiveExample)
-
-//     toast.show()
-//   })
-}
-
-    
-</script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/js/main.js"></script>
 
-<body onload="toaster();" >
- 
+<body>
   <nav class="container">
-    <header id="header"
-      class="d-flex align-items-center flex-wrap  justify-content-md-between py-3  border-bottom">
-
+    <header id="header" class="d-flex align-items-center flex-wrap  justify-content-md-between py-3  border-bottom">
       <a href="/" class="d-flex align-items-center  mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
         Gam-Learn
       </a>
       <i class="bi bi-list natoggle-button"></i>
       <div class="navbarlinks">
-      <ul id="navbar"  class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
-        style="list-style-type:none;">
-        <li><a href="index.html" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
-        <li><a href="index.html#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
-        <li><a href="stud-sc.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Subjects</a></li>
-        <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span> <i
-              class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="#">English</a></li>
-            <li><a href="../LandingPageHi/index.html">Hindi</a></li>
-          </ul>
-        </li>
-        <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
-        <li><a href="../Requestform/form.html"
-            class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link" style="display:block">Add question</a>
-        </li>
-      </ul>
-    </div>
-      
+        <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          style="list-style-type:none;">
+          <li><a href="index.html" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
+          <li><a href="index.html#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
+          <li><a href="stud-sc.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Subjects</a></li>
+          <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span>
+              <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">English</a></li>
+              <li><a href="../LandingPageHi/index.html">Hindi</a></li>
+            </ul>
+          </li>
+          <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
+          <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link"
+              style="display:block">Add question</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="col-md-3 text-end" id="logout">
         <label class="switch">
           <input class="dark-mode-checkbox" type="checkbox">
@@ -81,148 +58,129 @@ function toaster() {
         </div>
       </div>
 
-      
-
-
-
-
-      <!-- <div class="container d-flex align-items-center justify-content-between">
-  
-        <h1 class="logo"><a href="index.html">Gam-Learn</a></h1>
-  
-        <nav id="navbar" class="navbar">
-          <ul style="list-style-type:none;">
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About Gam-Learn</a></li> -->
-      <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
-      <!-- <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">English</a></li>
-                <li><a href="../LandingPageHi/index.html">Hindi</a></li>
-              </ul>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-  
-      </div> -->
-
-
     </header>
   </nav>
 
   <div id="hero" class="d-flex align-items-center" data-aos="fade-right">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <a href="Questions/Physics/index.html" target="_blank" class="text-black" id="foo-p">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/physics.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Physics</h5>
-            <div id="phys" class="progress-circle over50 p77">
-              <span>77%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/physics.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Physics</h5>
+              <div id="phys" class="progress-circle over50 p77">
+                <span>77%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sequi ea ipsa incidunt
+                a
+                cumque voluptates sunt. At, facilis? Cupiditate.</p>
+              <button id="rs-phys" type="button" class="btn btn-outline-danger" onclick="rs('rs-phys');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sequi ea ipsa incidunt a
-              cumque voluptates sunt. At, facilis? Cupiditate.</p>
-              <button id="rs-phys" type="button" class="btn btn-outline-danger" onclick="rs('rs-phys');">Reset Progress</button>
           </div>
         </div>
-      </div>
       </a>
       <a href="Questions/Chem/index.html" target="_blank" class="text-black" id="foo-c">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/chemistry.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Chemistry</h5>
-            <div id="chem" class="progress-circle p35">
-              <span>35%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/chemistry.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Chemistry</h5>
+              <div id="chem" class="progress-circle p35">
+                <span>35%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consequuntur.</p>
+              <button id="rs-chem" type="button" class="btn btn-outline-danger" onclick="rs('rs-chem');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, consequuntur.</p>
-            <button id="rs-chem" type="button" class="btn btn-outline-danger"  onclick="rs('rs-chem');">Reset Progress</button>
           </div>
         </div>
-      </div>
       </a>
       <a href="Questions/Maths/index.html" target="_blank" class="text-black" id="foo-m">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/maths.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Mathematics</h5>
-            <div id="math" class="progress-circle over50 p57">
-              <span>57%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/maths.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mathematics</h5>
+              <div id="math" class="progress-circle over50 p57">
+                <span>57%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, non, sed, nesciunt harum
+                nobis consequatur deleniti alias beatae necessitatibus neque minima consequuntur inventore eius
+                doloremque
+                incidunt numquam earum est. Corrupti..</p>
+              <button id="rs-math" type="button" class="btn btn-outline-danger" onclick="rs('rs-math');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, non, sed, nesciunt harum
-              nobis consequatur deleniti alias beatae necessitatibus neque minima consequuntur inventore eius doloremque
-              incidunt numquam earum est. Corrupti..</p>
-              <button id="rs-math" type="button" class="btn btn-outline-danger" onclick="rs('rs-math');">Reset Progress</button>
           </div>
         </div>
-      </div>
       </a>
       <a href="Questions/English/index.html" target="_blank" class="text-black" id="foo-e">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/english.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">English</h5>
-            <div id="eng" class="progress-circle over50 p90">
-              <span>90%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/english.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">English</h5>
+              <div id="eng" class="progress-circle over50 p90">
+                <span>90%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, expedita, porro saepe
+                accusantium sint illum molestiae vero deleniti nam minima iste at incidunt, dolor veniam perspiciatis
+                natus. Quasi, quod veniam.</p>
+              <button id="rs-eng" type="button" class="btn btn-outline-danger" onclick="rs('rs-eng');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, expedita, porro saepe
-              accusantium sint illum molestiae vero deleniti nam minima iste at incidunt, dolor veniam perspiciatis
-              natus. Quasi, quod veniam.</p>
-              <button id="rs-eng" type="button" class="btn btn-outline-danger" onclick="rs('rs-eng');">Reset Progress</button>
           </div>
         </div>
-      </div>
       </a>
       <a href="Questions/History/index.html" target="_blank" class="text-black" id="foo-h">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/history.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">History</h5>
-            <div id="hist" class="progress-circle p37">
-              <span>37%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/history.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">History</h5>
+              <div id="hist" class="progress-circle p37">
+                <span>37%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore iste
+                pariatur,
+                ab nam animi maxime debitis explicabo tenetur consequuntur.</p>
+              <button id="rs-hist" type="button" class="btn btn-outline-danger" onclick="rs('rs-hist');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore iste pariatur,
-              ab nam animi maxime debitis explicabo tenetur consequuntur.</p>
-              <button id="rs-hist" type="button" class="btn btn-outline-danger" onclick="rs('rs-hist');">Reset Progress</button>
           </div>
         </div>
-      </div>
       </a>
     </div>
   </div>
 
-<!-- 
+  <!-- 
   <div class="position-fixed bottom-0 p-3" style="z-index: 1111">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header"> -->
-        <!-- <img src="..." class="rounded me-2" alt="..."> -->
-       <!--  <strong class="me-auto">Gam-Learn Learning AI Assistant</strong>
+  <!-- <img src="..." class="rounded me-2" alt="..."> -->
+  <!--  <strong class="me-auto">Gam-Learn Learning AI Assistant</strong>
         <small>Just now.</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
@@ -251,8 +209,9 @@ function toaster() {
               <div class="card-body">
                 <h5 class="card-title">Sincerity Index</h5>
                 <div class="progress">
-                  <div id="sindex" class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="sindex" class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
 
                 <p class="card-text">Sincerity is a mix of seriousness and honesty. If you do things with sincerity,
@@ -268,8 +227,9 @@ function toaster() {
               <div class="card-body">
                 <h5 class="card-title">Learning Index</h5>
                 <div class="progress">
-                  <div id="leandex" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="leandex" class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
                 <p class="card-text">The Index of Learning Styles is an on-line survey instrument used to assess
                   preferences on four dimensions (active/reflective, sensing/intuitive, visual/verbal, and
@@ -284,8 +244,9 @@ function toaster() {
               <div class="card-body">
                 <h5 class="card-title">Achievement Index</h5>
                 <div class="progress">
-                  <div id="achdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="achdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
                 <p class="card-text">The Achievement Index is based on your performance in each subjects.</p>
               </div>
@@ -306,8 +267,8 @@ function toaster() {
           <div class="card-body">
             <h5>Your Overall Performance</h5>
             <div class="progress">
-              <div id="opdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
-                style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="opdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div id="gpa-text">
               You are falling behind from others. Keep practicing to keep up and balance on the track of your journey.
@@ -316,7 +277,8 @@ function toaster() {
         </div>
 
       </div>
-      <div><button id="rs-all" type="button" class="btn btn-outline-danger" onclick="rs('rs-all');">Reset All Progress Records</button></div>
+      <div><button id="rs-all" type="button" class="btn btn-outline-danger" onclick="rs('rs-all');">Reset All Progress
+          Records</button></div>
 
 
 
@@ -342,31 +304,32 @@ function toaster() {
         <div class="row">
 
           <div class="spe780row">
-          <div class="col-2">
-            <h5 class="fs-4">Navigation Pane</h5>
-            <ul class="nav flex-column fs-5">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
+            <div class="col-2">
+              <h5 class="fs-4">Navigation Pane</h5>
+              <ul class="nav flex-column fs-5">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+
+
+
+            <div class="col-4 offset-1" style="margin-right: 50px;">
+              <form>
+                <h5 class="fs-4">Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                    style="width:200px">
+                  <button class="btn btn-primary dabs" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
           </div>
-
-
-
-          <div class="col-4 offset-1"  style="margin-right: 50px;">
-            <form>
-              <h5 class="fs-4">Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" style="width:200px">
-                <button class="btn btn-primary dabs" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
           <div class="card text-center col-4 d-flex">
             <div class="card-header fs-5">
               Why Gam-Learn?
@@ -444,12 +407,12 @@ function toaster() {
     <script>
       //navbar script
       const toggleButton = document.getElementsByClassName('natoggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
-    
-    toggleButton.addEventListener('click', () => {
-      console.log("ham burger triggered!")
-      navbarLinks.classList.toggle('active')
-    })
+      const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
+
+      toggleButton.addEventListener('click', () => {
+        console.log("ham burger triggered!")
+        navbarLinks.classList.toggle('active')
+      })
     </script>
 
     <script src="assets/vendor/aos/aos.js"></script>

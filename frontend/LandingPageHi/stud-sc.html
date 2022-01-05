@@ -15,64 +15,45 @@
   <link href="assets/css/pie.css" rel="stylesheet">
 </head>
 
-<!-- <script>
-var toastTrigger = document.getElementById('liveToastBtn')
-var toastLiveExample = document.getElementById('liveToast')
-function toaster() {
-    var toastTrigger = document.getElementById('liveToastBtn');
-    var toastLiveExample = document.getElementById('liveToast');
-    var toast = new bootstrap.Toast(toastLiveExample);
-    toast.show();
-
-//     toastTrigger.addEventListener('click', function () {
-//     var toast = new bootstrap.Toast(toastLiveExample)
-
-//     toast.show()
-//   })
-}
-
-    
-</script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/js/main.js"></script>
 
-<body onload="toaster();">
-
+<body>
   <nav class="container">
     <header id="header"
       class="d-flex align-items-center d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3  border-bottom">
-
-
-
       <a href="/" class="d-flex align-items-center  mb-2 mb-md-0 text-dark text-decoration-none fs-2" id="logo">
         Gam-Learn
       </a>
       <i class="bi bi-list natoggle-button"></i>
       <div class="navbarlinks">
+        <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          style="list-style-type:none;">
+          <li><a href="#hero" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
+          <li><a href="#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
+          <li><a href="stud-sc.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Subjects</a></li>
+          <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span>
+              <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../LandingPage/index.html">English</a></li>
+              <li><a href="#">Hindi</a></li>
+            </ul>
+          </li>
+          <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
+          <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link"
+              style="display:block">Add question</a>
+          </li>
+        </ul>
+      </div>
 
-      <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
-        style="list-style-type:none;">
-        <li><a href="index.html" class="nav-link px-2 link-secondary fs-5 fw-bold">Home</a></li>
-        <li><a href="index.html#about" class="nav-link px-2 link-dark fs-5 fw-bold">About</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
-        <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span> <i
-              class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="../LandingPage/stud-sc.html">English</a></li>
-            <li><a href="#">Hindi</a></li>
-          </ul>
-        </li>
-        <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
-        <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Add question</a>
-        </li>
-        
-      </ul>
-      <div class="col-md-3 text-end" id="logout" >
+      <div class="col-md-3 text-end" id="logout">
         <label class="switch">
-          <input class="dark-mode-checkbox" type="checkbox">
+          <input id="mode_switch" class="dark-mode-checkbox" type="checkbox">
           <span class="slider round"></span>
         </label>
-        <div class="logged-user" style="color:#02182b;margin-top:3px;font-size:17px;"></div>
+        <a href="../Dashboard/dashboard.html" class="logged-user"
+          style="color:#02182b;margin-top:3px;font-size:17px;"></a>
         <div>
           <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../index.html'"
             id="logout-btn">Logout</button>
@@ -82,109 +63,112 @@ function toaster() {
     </header>
   </nav>
 
-  
-
 
   <div id="hero" class="d-flex align-items-center" data-aos="fade-right">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <a href="Physics/index.html" target="_blank" class="text-black" id="foo-p">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/physics.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">भौतिक विज्ञान</h5>
-            <div id="phys" class="progress-circle over50 p77">
-              <span>77%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/physics.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">भौतिक विज्ञान</h5>
+              <div id="phys" class="progress-circle over50 p77">
+                <span>77%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
+                सहायक टेक्स्ट है। यह सामग्री थोड़ी लंबी है।</p>
+              <button id="rs-phys" type="button" class="btn btn-outline-danger" onclick="rs('rs-phys');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
-              सहायक टेक्स्ट है। यह सामग्री थोड़ी लंबी है।</p>
-              <button id="rs-phys" type="button" class="btn btn-outline-danger" onclick="rs('rs-phys');">Reset Progress</button>
           </div>
         </div>
-      </div>
-    </a>
-    <a href="Chem/index.html" target="_blank" class="text-black" id="foo-c">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/chemistry.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> रसायन विज्ञान</h5>
-            <div id="chem" class="progress-circle p35">
-              <span>35%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
-              </div>
-            </div>
-            <p class="card-text">यह एक छोटा कार्ड है।</p>
-            <button id="rs-chem" type="button" class="btn btn-outline-danger" onclick="rs('rs-chem');">Reset Progress</button>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a href="Maths/index.html" target="_blank" class="text-black" id="foo-m">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/maths.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">गणित</h5>
-            <div id="math" class="progress-circle over50 p57">
-              <span>57%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
-              </div>
-            </div>
-            <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
-              सहायक टेक्स्ट है।</p>
-              <button id="rs-math" type="button" class="btn btn-outline-danger" onclick="rs('rs-math');">Reset Progress</button>
-          </div>
-        </div>
-      </div>
       </a>
-    <a href="English/index.html" target="_blank" class="text-black" id="foo-e">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/english.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">अंग्रेज़ी</h5>
-            <div id="eng" class="progress-circle over50 p90">
-              <span>90%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+      <a href="Chem/index.html" target="_blank" class="text-black" id="foo-c">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/chemistry.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> रसायन विज्ञान</h5>
+              <div id="chem" class="progress-circle p35">
+                <span>35%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">यह एक छोटा कार्ड है।</p>
+              <button id="rs-chem" type="button" class="btn btn-outline-danger" onclick="rs('rs-chem');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
-              सहायक टेक्स्ट है। यह सामग्री थोड़ी लंबी है।</p>
-              <button id="rs-eng" type="button" class="btn btn-outline-danger" onclick="rs('rs-eng');">Reset Progress</button>
           </div>
         </div>
-      </div>
       </a>
-    <a href="History/index.html" target="_blank" class="text-black" id="foo-h">
-      <div class="col">
-        <div class="card h-100">
-          <img src="assets/img/history.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">इतिहास</h5>
-            <div id="hist" class="progress-circle p37">
-              <span>37%</span>
-              <div class="left-half-clipper">
-                <div class="first50-bar"></div>
-                <div class="value-bar"></div>
+      <a href="Maths/index.html" target="_blank" class="text-black" id="foo-m">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/maths.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">गणित</h5>
+              <div id="math" class="progress-circle over50 p57">
+                <span>57%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
               </div>
+              <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
+                सहायक टेक्स्ट है।</p>
+              <button id="rs-math" type="button" class="btn btn-outline-danger" onclick="rs('rs-math');">Reset
+                Progress</button>
             </div>
-            <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
-              सहायक टेक्स्ट है। यह सामग्री थोड़ी लंबी है।</p>
-              <button id="rs-hist" type="button" class="btn btn-outline-danger" onclick="rs('rs-hist');">Reset Progress</button>
           </div>
         </div>
-      </div>
+      </a>
+      <a href="English/index.html" target="_blank" class="text-black" id="foo-e">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/english.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">अंग्रेज़ी</h5>
+              <div id="eng" class="progress-circle over50 p90">
+                <span>90%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
+              </div>
+              <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
+                सहायक टेक्स्ट है। यह सामग्री थोड़ी लंबी है।</p>
+              <button id="rs-eng" type="button" class="btn btn-outline-danger" onclick="rs('rs-eng');">Reset
+                Progress</button>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="History/index.html" target="_blank" class="text-black" id="foo-h">
+        <div class="col">
+          <div class="card h-100">
+            <img src="assets/img/history.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">इतिहास</h5>
+              <div id="hist" class="progress-circle p37">
+                <span>37%</span>
+                <div class="left-half-clipper">
+                  <div class="first50-bar"></div>
+                  <div class="value-bar"></div>
+                </div>
+              </div>
+              <p class="card-text">यह एक लंबा कार्ड है जिसमें अतिरिक्त सामग्री के लिए स्वाभाविक लीड-इन के रूप में नीचे
+                सहायक टेक्स्ट है। यह सामग्री थोड़ी लंबी है।</p>
+              <button id="rs-hist" type="button" class="btn btn-outline-danger" onclick="rs('rs-hist');">Reset
+                Progress</button>
+            </div>
+          </div>
+        </div>
       </a>
     </div>
   </div>
@@ -223,8 +207,9 @@ function toaster() {
               <div class="card-body">
                 <h5 class="card-title">ईमानदारी सूचकांक</h5>
                 <div class="progress">
-                  <div id="sindex" class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="sindex" class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 65%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
 
                 <p class="card-text">ईमानदारी गंभीरता और ईमानदारी का मिश्रण है। अगर आप ईमानदारी से काम करते हैं, तो लोग
@@ -240,8 +225,9 @@ function toaster() {
               <div class="card-body">
                 <h5 class="card-title">लर्निंग इंडेक्</h5>
                 <div class="progress">
-                  <div id="leandex" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="leandex" class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 85%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
                 <p class="card-text">सीखने की शैलियों का सूचकांक रिचर्ड एम. फेल्डर और लिंडा द्वारा तैयार किए गए सीखने की
                   शैली मॉडल के चार आयामों (सक्रिय/चिंतनशील, संवेदन/सहज, दृश्य/मौखिक, और अनुक्रमिक/वैश्विक) पर वरीयताओं
@@ -255,8 +241,9 @@ function toaster() {
               <div class="card-body">
                 <h5 class="card-title">उपलब्धि सूचकांक</h5>
                 <div class="progress">
-                  <div id="achdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
-                    style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div id="achdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                    role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
                 <p class="card-text">उपलब्धि सूचकांक प्रत्येक विषय में आपके प्रदर्शन पर आधारित है।</p>
               </div>
@@ -277,8 +264,8 @@ function toaster() {
           <div class="card-body">
             <h5>आपका समग्र प्रदर्शन</h5>
             <div class="progress">
-              <div id="opdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
-                style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div id="opdex" class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div id="gpa-text">
               आप दूसरों से पिछड़ रहे हैं। अपनी यात्रा के ट्रैक पर बने रहने और संतुलन बनाए रखने के लिए अभ्यास करते रहें।
@@ -287,13 +274,14 @@ function toaster() {
         </div>
 
       </div>
-      <div><button id="rs-all" type="button" class="btn btn-outline-danger" onclick="rs('rs-all');">Reset All Progress Records</button></div>
+      <div><button id="rs-all" type="button" class="btn btn-outline-danger" onclick="rs('rs-all');">Reset All Progress
+          Records</button></div>
 
 
     </div>
   </div>
 
-  
+
   <main id="main">
 
 
@@ -313,31 +301,32 @@ function toaster() {
         <div class="row">
           <div class="spe780row">
 
-          <div class="col-2">
-            <h5 class="fs-4">Navigation Pane</h5>
-            <ul class="nav flex-column fs-5">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-            </ul>
+            <div class="col-2">
+              <h5 class="fs-4">Navigation Pane</h5>
+              <ul class="nav flex-column fs-5">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+
+
+
+            <div class="col-4 offset-1" style="margin-right: 50px;">
+              <form>
+                <h5 class="fs-4">Subscribe to our newsletter</h5>
+                <p>Monthly digest of whats new and exciting from us.</p>
+                <div class="d-flex w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                    style="width:200px">
+                  <button class="btn btn-primary dabs" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
           </div>
-
-
-
-          <div class="col-4 offset-1" style="margin-right: 50px;">
-            <form>
-              <h5 class="fs-4">Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Email address</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Email address" style="width:200px">
-                <button class="btn btn-primary dabs" type="button">Subscribe</button>
-              </div>
-            </form>
-          </div>
-        </div>
           <div class="card text-center col-4 d-flex">
             <div class="card-header fs-5">
               Why Gam-Learn?
@@ -366,7 +355,7 @@ function toaster() {
       </footer>
     </div>
 
-     
+
 
 
     <!-- <section id="about" class="about section-bg">
@@ -417,12 +406,12 @@ function toaster() {
     <script>
       //navbar script
       const toggleButton = document.getElementsByClassName('natoggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
-    
-    toggleButton.addEventListener('click', () => {
-      console.log("ham burger triggered!")
-      navbarLinks.classList.toggle('active')
-    })
+      const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
+
+      toggleButton.addEventListener('click', () => {
+        console.log("ham burger triggered!")
+        navbarLinks.classList.toggle('active')
+      })
     </script>
 
     <script src="assets/vendor/aos/aos.js"></script>
