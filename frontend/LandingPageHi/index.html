@@ -11,6 +11,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="../Navbar/navbar.css">
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/darkstyle.css">
   <link href="assets/css/chat.css" rel="stylesheet">
@@ -30,80 +31,45 @@
       </a>
       <i class="bi bi-list natoggle-button"></i>
       <div class="navbarlinks">
-      <ul id="navbar"  class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
-        style="list-style-type:none;">
-        <li><a href="#hero" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
-        <li><a href="#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
-        <li><a href="stud-sc.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Subjects</a></li>
-        <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span> <i
-              class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="../LandingPage/index.html">English</a></li>
-            <li><a href="#">Hindi</a></li>
-          </ul>
-        </li>
-        <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
-        <li><a href="../Requestform/form.html"
-            class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link" style="display:block">Add question</a>
-        </li>
-      </ul>
-    </div>
-      
+        <ul id="navbar" class="nav navbar col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          style="list-style-type:none;">
+          <li><a href="#hero" class="nav-link px-2 link-secondary scrollto active fs-5 fw-bold">Home</a></li>
+          <li><a href="#about" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">About</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">FAQs</a></li>
+          <li><a href="stud-sc.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Subjects</a></li>
+          <li class="dropdown"><a href="#" class="nav-link px-2 link-dark scrollto fs-5 fw-bold"><span>Language</span>
+              <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../LandingPage/index.html">English</a></li>
+              <li><a href="#">Hindi</a></li>
+            </ul>
+          </li>
+          <li><a href="score.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold">Scores</a></li>
+          <li><a href="../Requestform/form.html" class="nav-link px-2 link-dark scrollto fs-5 fw-bold add-question-link"
+              style="display:block">Add question</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="col-md-3 text-end" id="logout">
         <label class="switch">
           <input id="mode_switch" class="dark-mode-checkbox" type="checkbox">
           <span class="slider round"></span>
         </label>
-        <a href="../Dashboard/dashboard.html" class="logged-user" style="color:#02182b;margin-top:3px;font-size:17px;"></a>
+        <a href="../Dashboard/dashboard.html" class="logged-user"
+          style="color:#02182b;margin-top:3px;font-size:17px;"></a>
         <div>
           <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../index.html'"
             id="logout-btn">Logout</button>
         </div>
       </div>
-
-      
-
-
-
-
-      <!-- <div class="container d-flex align-items-center justify-content-between">
-  
-        <h1 class="logo"><a href="index.html">Gam-Learn</a></h1>
-  
-        <nav id="navbar" class="navbar">
-          <ul style="list-style-type:none;">
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About Gam-Learn</a></li> -->
-      <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
-      <!-- <li class="dropdown"><a href="#"><span>Language</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">English</a></li>
-                <li><a href="../LandingPageHi/index.html">Hindi</a></li>
-              </ul>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-  
-      </div> -->
-
-
     </header>
   </nav>
 
 
   <section id="hero" class="d-flex align-items-center">
-    <!-- <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Gam-learn</h1>
-      <h2>हमेशा सीखने को मजेदार बनाने का लक्ष्य</h2>
-      <div class="d-flex">
-        <a href="#about" class="btn-get-started scrollto">शुरू हो जाओ</a>
-      </div>
-    </div> -->
     <section id="home-hero" aria-label="Newest Photos">
       <div class="carousel" data-carousel>
-        <!-- <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button> -->
         <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
         <div class="slide-text">
           <h1>Gam-learn</h1>
@@ -359,32 +325,33 @@
 
       <div class="row">
 
-      <div class="spe780row">
-        <div class="col-2 navigation-pane">
-          <h5 class="fs-4">Navigation Pane</h5>
-          <ul class="nav flex-column fs-5">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-          </ul>
+        <div class="spe780row">
+          <div class="col-2 navigation-pane">
+            <h5 class="fs-4">Navigation Pane</h5>
+            <ul class="nav flex-column fs-5">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+
+
+          <div class="col-4 offset-1" style="margin-right: 50px;">
+            <form class="subscribe-form">
+              <h5 class="fs-4">Subscribe to our newsletter</h5>
+              <p>Monthly digest of whats new and exciting from us.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                  style="width:200px">
+                <button class="btn btn-primary dabs" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
         </div>
-
-
-
-        <div class="col-4 offset-1" style="margin-right: 50px;">
-          <form class="subscribe-form">
-            <h5 class="fs-4">Subscribe to our newsletter</h5>
-            <p>Monthly digest of whats new and exciting from us.</p>
-            <div class="d-flex w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address" style="width:200px">
-              <button class="btn btn-primary dabs" type="button">Subscribe</button>
-            </div>
-          </form>
-        </div>
-      </div>
         <div class="card text-center col-4 d-flex card-small">
           <div class="card-header fs-5">
             गम-लर्न क्यों?
@@ -458,16 +425,16 @@
     </section> -->
 
 
-    <script>
-      //navbar script
-      const toggleButton = document.getElementsByClassName('natoggle-button')[0]
+  <script>
+    //navbar script
+    const toggleButton = document.getElementsByClassName('natoggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbarlinks')[0]
-    
+
     toggleButton.addEventListener('click', () => {
       console.log("ham burger triggered!")
       navbarLinks.classList.toggle('active')
     })
-    </script>
+  </script>
 
 
   <script src="assets/vendor/aos/aos.js"></script>
