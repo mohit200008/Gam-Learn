@@ -30,7 +30,10 @@ const Question = document.querySelector("#Question1");
 let i = 2;
 function insert() {
     let clone = Question.cloneNode(true);
-
+    let secondChild = clone.children[1];
+    for (let i = 0; i < secondChild.children.length; i++) {
+        clone.children[1].children[i].value = '';
+    }
     // Update the ID and add a class
     let s = "#Question" + (i - 1);
     const lastQuestion = document.querySelector(s);
